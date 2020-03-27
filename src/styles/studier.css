@@ -1,0 +1,16 @@
+.studier-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.sb-container {
+    margin: 12vh 10vw;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+    .sb-container {
+        margin: 12vh 2vw;
+    }
+  }

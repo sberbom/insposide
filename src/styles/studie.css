@@ -1,0 +1,47 @@
+.studie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 10vw;
+}
+
+.study-header {
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 5vh;
+}
+
+.study-title {
+    align-self: center;
+    margin: 2rem;
+    text-align: center;
+}
+
+.study-video {
+    width: 70%;
+    height: 40vh;
+    align-self: center;
+    margin-bottom: 5vh;
+}
+
+.study-title-split-mobile {
+    display: none;
+    align-self: center;
+    margin: 2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .study-title-split-mobile {
+        display: block;
+    }
+
+    .study-title-split {
+        display: none;
+    }
+
+    .studie-container {
+        padding: 0 2vw;
+    }
+  }

@@ -1,0 +1,83 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    height: 35vh;
+}
+
+.card-text-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    height: 80%;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.study-photo {
+    object-fit: cover;
+    width: 42%;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.card-button {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.split-title {
+    display: none;
+}
+
+.none-split-title {
+    display: block;
+}
+
+.card-fade-overlay {
+    position: absolute;
+    background: -webkit-linear-gradient(top,hsla(0,0%,100%,0),#fff);
+    background: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(#fff));
+    background: -o-linear-gradient(top,hsla(0,0%,100%,0) 0,#fff 100%);
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#fff);
+    bottom: 8vh;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+@media only screen and (max-width: 1130px) {
+    .split-title {
+        display: block;
+    }
+
+    .none-split-title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .split-title {
+        display: none;
+    }
+    
+    .none-split-title {
+        display: block;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .split-title {
+        display: block;
+    }
+
+    .none-split-title {
+        display: none;
+    }
+  }

@@ -1,0 +1,19 @@
+.header-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;    
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-bottom: 2vh;
+}
+
+.main-title {
+    padding: 1vh 1vw 3vh 6vw;
+    color: #fff;
+    background-color: #33bdea;
+    margin-bottom: 0px;
+    width: 70vw;
+    border-radius: 0 5px 0 0;
+  }

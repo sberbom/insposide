@@ -1,5 +1,38 @@
-.App {
-  text-align: center;
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  font-size: 16px;
+}
+
+body {
+  background-color: #f1f6fa !important;
+  font-family: 'Ubuntu', sans-serif;
+  color: #616161;
+  padding-bottom: 10vh;
+}
+
+p {
+  font-family: Helvetica,Arial,"sans-serif";
+}
+
+h3, h2, h1, h5 {
+  color: #33bdea;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.disply-4{
+  font-weight: 500;
+}
+
+.card-container {
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .App-logo {
@@ -34,5 +67,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
   }
 }
