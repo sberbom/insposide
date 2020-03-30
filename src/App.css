@@ -61,6 +61,11 @@ h3 {
   color: #61dafb;
 }
 
+.btn-primary {
+  background-color: #33bdea !important;
+  border-color: #33bdea !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -79,5 +84,6 @@ h3 {
 @media only screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr;
+    padding: 0 2vw;
   }
 }

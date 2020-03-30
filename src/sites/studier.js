@@ -12,6 +12,7 @@ class Studier extends React.Component {
         this.kommunikasjonsteknologi = React.createRef()
         this.datatekonologi = React.createRef()
         this.industriellKjemiOgBioteknologi = React.createRef()
+        this.fysikkOgMattematikk = React.createRef()
     }
 
     componentDidMount(){
@@ -20,7 +21,6 @@ class Studier extends React.Component {
 
     scroll = () => {
         const value = queryString.parse(this.props.location.search)
-        console.log(value.studie)
         switch(value.studie) {
             case undefined:
                 window.scrollTo(0,0);
@@ -33,6 +33,9 @@ class Studier extends React.Component {
                 break;
             case "Industiell kjemi og bioteknologi":
                 window.scrollTo(0, this.industriellKjemiOgBioteknologi.current.offsetTop - 70);
+                break;
+            case "Fysikk og mattematikk":
+                window.scrollTo(0, this.fysikkOgMattematikk.current.offsetTop - 70);
                 break;
             default:
                 window.scrollTo(0,0);
@@ -67,6 +70,13 @@ class Studier extends React.Component {
                         p1={"Vil du være med å utvikle energi, materialer, mat og medisiner på en miljøvennlig måte? Mange av de største vitenskapelige nyvinningene i dag skjer innenfor industriell kjemi og bioteknologi. Derfor passer dette studiet for deg som vil bidra til å utvikle løsningene på morgendagens utfordringer."}
                         p2={"Som sivilingeniør i industriell kjemi og bioteknologi er du godt rustet for fremtiden, med en rekke spennende jobbmuligheter. Du kan blant annet jobbe innen havbruk- og matindustrien, i legemiddelindustrien, ved kjemiske laboratorier eller i olje- og gass-sektoren. Du kan også jobbe som forsker, eller som rådgiver i offentlig forvaltning eller konsulentfirma."}
                         NTNU={"https://www.ntnu.no/studier/mtkj"}
+                    />
+                    <Studie 
+                        ref={this.fysikkOgMattematikk}
+                        name={"Fysikk og Matematikk "}
+                        image={"https://www.ntnu.no/documents/143156/1267126263/PKF_1622_web_800_410.jpg/f4fb2aa6-970a-406d-8bd2-6f4df8582f1c?t=1450781757676"}
+                        p1={"Fysikk og Matematikk (fysmat) gir deg grundig teoretisk kompetanse innen matematiske modeller og fysiske prinsipper. Dersom du er nysgjerrig og glad i matte og fysikk er dette studiet for deg! Du får gjøre forsøk og se fysikken i praksis i tillegg til å lære deg å programmere og bruke dette i beregninger. Disse fagområdene danner en basis for all teknologisk utvikling.  Det sies at etter man har studert fysmat blir man sivilingeniørenes potet – du kan brukes til alt! Dette er fordi man rett og slett blir en god problemløser, og dette trenger du innen ALLE fagfelt! Etter to år på fysmat, vil du kunne velge å spesialisere deg innen en av tre spennende fagområder. Du har valget mellom Teknisk Fysikk - du graver dypere ned i fysikkens verden, Industriell Matematikk – gir deg en bred og anvendbar kompetanse innen matte, Biofysikk og Medisinsk teknologi – hvor du kan være med på å utvikle kunstige organer.  "}
+                        NTNU={"https://www.ntnu.no/studier/mtfyma"}
                     />
                 </div>
             </div>

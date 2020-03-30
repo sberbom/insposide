@@ -48,7 +48,7 @@ class Home extends React.Component{
                         />
                     <SBCard
                         title={"Fysikk og mattematikk"}
-                        description={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is "}
+                        description={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan redde kloden!"}
                         image = {Selda_flamme}
                         />
                 </div>

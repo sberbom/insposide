@@ -1,19 +1,40 @@
 .header-container {
-    height: 80vh;
+    height: calc(75vh + 66px);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-position: center;    
     background-repeat: no-repeat; 
     background-size: cover;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
 }
 
 .main-title {
     padding: 1vh 1vw 3vh 6vw;
     color: #fff;
     background-color: #33bdea;
-    margin-bottom: 0px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     width: 70vw;
-    border-radius: 0 5px 0 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 2.5rem;
+  }
+
+.header-video {
+    height: 75vh;
+    border-width: 0px !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .header-video {
+        height: 40vh;
+    }
+
+    .header-container {
+        height: calc(40vh + 62px);
+    }
+
+    .main-title {
+        width: 96vw;
+    }
   }
