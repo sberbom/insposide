@@ -4,7 +4,7 @@ import '../styles/card.css'
 
 function SBCard(props) {
     return(
-        <div className="card">
+        <div className="SB-card card">
             <img className="study-photo" src={props.image} alt="study" />
             <div className="card-text-container">
                 <div className="card-text">

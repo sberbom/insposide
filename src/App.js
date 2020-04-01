@@ -5,6 +5,7 @@ import { Switch, Route }  from "react-router-dom";
 import SBNavbar from './components/navbar'
 import Home from './sites/home'
 import Studier from './sites/studier'
+import Klasserom from './sites/klasserom'
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <Switch>
           <Route path="/studier">
             <Studier/>
+          </Route>
+          <Route path="/klasserom">
+            <Klasserom/>
           </Route>
           <Route path="/">
             <Home />

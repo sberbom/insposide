@@ -22,6 +22,7 @@ function SBNavbar(props)  {
                 <Nav className="mr-auto">
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/">Hjem</Link>
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/studier">Studier</Link>
+                    <Link className="nav-link" onClick={() => setExpanded(false)} to="/klasserom">Klasserom</Link>
                     <Nav.Link target="_blank" href="http://ent3r.no">ENT3R.no</Nav.Link>
                     <Nav.Link target="_blank" href="https://www.instagram.com/ent3r_trondheim/?hl=nb">Instagram</Nav.Link>
                 </Nav>
