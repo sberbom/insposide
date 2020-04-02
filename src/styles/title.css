@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+    padding-top: 5vh;
+  }
+
+  .title-container {
+      align-self: center;
+      padding: 0 10vw;
+      width: 100%;
+  }
