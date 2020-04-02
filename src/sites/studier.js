@@ -15,6 +15,10 @@ class Studier extends React.Component {
         this.elsys = React.createRef()
         this.kyb = React.createRef()
         this.indøk = React.createRef()
+        this.lektor = React.createRef()
+        this.bygg = React.createRef()
+        this.kjemi = React.createRef()
+        this.data = React.createRef()
     }
 
     componentDidMount(){
@@ -50,6 +54,18 @@ class Studier extends React.Component {
                 break;
             case "Industriell økonomi og teknologiledelse":
                 window.scrollTo(0, this.indøk.current.offsetTop - 70);
+                break;
+            case "Lektorutdanning i Realfag":
+                window.scrollTo(0, this.lektor.current.offsetTop - 70);
+                break;
+            case "Bygg- og miljøteknikk":
+                window.scrollTo(0, this.bygg.current.offsetTop - 70);
+                break;
+            case "Industriell kjemi og bioteknologi":
+                window.scrollTo(0, this.kjemi.current.offsetTop - 70);
+                break;
+            case "Datateknologi":
+                window.scrollTo(0, this.data.current.offsetTop - 70);
                 break;
             default:
                 window.scrollTo(0,0);
@@ -127,6 +143,41 @@ class Studier extends React.Component {
                         p4={"Det sosiale miljøet på Indøk er veldig godt, både innad i klassene og på tvers av årskurs. Linjeforeningene har arrangementer hver uke i løpet av semesteret, så det er alltid noe som skjer på Indøk."}
                         p5={"Gira på å vite mer? Sjekk ut indøk.no for mer info!"}
                         NTNU={"https://www.ntnu.no/studier/mtiot"}
+                    />
+                    <Studie 
+                        ref={this.lektor}
+                        name={"Lektorutdanning i Realfag"}
+                        video={"https://www.youtube.com/embed/I33gaZO-IWI"}
+                        p1={"Har du lyst til å utvikle din faglige interesse for realfag og samtidig synes formidling er spennende? Da kan lektorutdanningen i realfag være noe for deg. Du får bred realfaglig og teknologisk innsikt samtidig som du opparbeider deg gode pedagogisk evner. Dette gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig sektor. "}                     
+                        p2={"Er du glad i mennesker, har en iver for realfag og har lyst til at flere skal se gleden, nytten og fasinasjonen med realfag? Da kan lektorutdanningen i realfag være noe for akkurat deg! Lektorutdanningen i realfag gir deg en unik kompetanse i realfagene du brenner mest for, samtidig som du gjennom praksis i studiet får en solid pedagogisk bakgrunn. Du kan være med på å skape teknologiske løsninger for en bærekraftig fremtid, eller finne ut hvordan programmering og digital undervisning best kan implementeres i skolen. Begge deler er mulig på lektorstudiet! Du velger først to av fagene kjemi, fysikk, biologi, informatikk og matte, og fordyper deg videre i ett av fagene. På den måten har du faktisk muligheten til å få to utdanninger på 5 år, både lektorgraden OG en master i et valgt realfag på lik linje med alle som studerer det realfaget. Det er kult og unikt, og gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig næringsliv."}
+                        NTNU={"https://www.ntnu.no/studier/mlreal"}
+                    />
+                    <Studie 
+                        ref={this.bygg}
+                        name={"Bygg- og miljøteknikk"}
+                        video={"https://www.youtube.com/embed/rmo-SfSVffE"}
+                        p1={"Vil du være med å forme verden? Vil du sørge for rent drikke vann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater? "}
+                        p2={"Er du venn med Newtons lover? Hvis ikke så kommer du vertfall til å bli det. Men bygg er ikke bare det, det er økonomi, ledelse, team arbeid, matematikk, energieffektivisering, bærekraft og mye mye mer."}
+                        p3={"Som byggingeniør skal man ofte konstruere og dimensjonere konstruksjoner. Enkelt sagt betyr det å finne gode og lønnsomme løsninger. Ved valg av retning vil du kunne spesialisere deg innen det du syntes er mest spennende. Du kan være en leder på byggeplassen eller spesialisere deg innen alt fra brann og akustikk til geoteknikk. Det er også mulig å spesialisere seg innen maritime konstruksjoner dersom havets enorme krefter er noe du tørr å deale med. "}
+                        p4={"Men bygg og miljøteknikk stopper ikke der. Med retninger innen vann forsyning, rensing og vannkraft har du store muligheter for å gjøre verden til et bedre sted.  Infrastruktur og transport er en annen fordypning der du bla. kan få muligheten til å drive by utvikling og bygge infrastruktur. "}
+                        p5={"Med en sivilingeniør grad fra bygg og miljøteknikk har du veldig mange muligheter innen en stor bransje. Linjen er en av NTNU sine største linjer og dermed også en linje med et stort mangfold. Så her finner du lett noen å trives med! "}
+                        NTNU={"https://www.ntnu.no/studier/mtbygg"}
+                    />
+                    <Studie 
+                        ref={this.kjemi}
+                        name={"Industriell kjemi og bioteknologi"}
+                        video={"https://www.youtube.com/embed/-egvgEP1nO0"}
+                        p1={""}
+                        p2={""}
+                        NTNU={"https://www.ntnu.no/studier/mtkj"}
+                    />
+                    <Studie 
+                        ref={this.data}
+                        name={"Datateknologi"}
+                        video={""}
+                        p1={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
+                        p2={"Dersom du er glad i realfag og nysgjerrig på koding, har du kommet til rett studie! På Datateknologi lærer du teknikker for å utvikle datasystemer, og du får brukt det teoretiske fagstoffet til å løse utfordringer i prosjektoppgaver sammen med andre studenter. Det å løse problemer og jobbe i team, blir du altså god på! Dette gjør at mange blir ledere i prosjekter når de kommer ut i jobb, andre blir eksperter på ett enkelt teknologiområde. Man trenger ingen forkunnskaper i programmering før man starter på studiet. De første årene byr på en bred kompetanse innenfor datafag og andre generelle ingeniørfag. I det tredje året kan du spesialisere deg og velge mellom fire studieretninger: Kunstig intelligens, databaser og søk, programvaresystemer og Algoritmer og datamaskiner. Studiet passer for deg som ønsker å skape fremtidens teknologi, i dag jobbes det for eksempel med å bruke datateknologi til å forstå sammenhenger i genmateriale, som kan bidra til å utvikle medisiner og kurere sykdommer. "}
+                        NTNU={"https://www.ntnu.no/studier/mtkj"}
                     />
                 </div>
             </div>

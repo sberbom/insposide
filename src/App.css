@@ -66,6 +66,15 @@ h3 {
   border-color: #33bdea !important;
 }
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-btn {
+  margin: 5vh 15vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

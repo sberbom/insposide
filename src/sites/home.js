@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/header'
 import SBCard from '../components/card'
+import Survey from '../components/survey'
 import '../styles/card.css'
 
 import Selda_flamme from '../files/Selda_flamme.JPG'
@@ -12,7 +13,8 @@ import agata from '../files/agata_cut.jpg'
 import carl_fredrik from '../files/carl_fredrik_cut.jpg'
 import sina from '../files/sina_cut.jpg'
 import tobias from '../files/tobias.jpeg'
-
+import martine from '../files/martine_cut.jpg'
+import kristin from '../files/kristin_cut.jpg'
 
 
 class Home extends React.Component{
@@ -23,7 +25,7 @@ class Home extends React.Component{
     
     render(){
         return(
-            <div>
+            <div className="home-container">
                 <Header 
                 backgroundImage={Selda_flamme}
                 text={"Lær mer om studiene på NTNU"}
@@ -70,7 +72,28 @@ class Home extends React.Component{
                         description={"Sivilingeniørutdanningen industriell økonomi og teknologiledelse (Indøk) er et tverrfaglig masterprogram ved NTNU. Tradisjonelle sivilingeniøremner kombineres med emner i ledelse og økonomi. Utdanningen er en av de mest attraktive i Norge."}
                         image = {tobias}
                         />
+                    <SBCard
+                        title={"Lektorutdanning i Realfag"}
+                        description={"Har du lyst til å utvikle din faglige interesse for realfag og samtidig synes formidling er spennende? Da kan lektorutdanningen i realfag være noe for deg. Du får bred realfaglig og teknologisk innsikt samtidig som du opparbeider deg gode pedagogisk evner. Dette gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig sektor. "}
+                        image = {martine}
+                        />
+                    <SBCard
+                        title={"Bygg- og miljøteknikk"}
+                        description={"Vil du være med å forme verden? Vil du sørge for rent drikke vann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater?"}
+                        image = {kristin}
+                        />
+                    <SBCard
+                        title={"Industriell kjemi og bioteknologi"}
+                        description={""}
+                        image = {""}
+                        />
+                    <SBCard
+                        title={"Datateknologi"}
+                        description={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
+                        image = {""}
+                        />
                 </div>
+                <Survey />
             </div>
         )
     }
