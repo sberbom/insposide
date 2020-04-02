@@ -1,0 +1,46 @@
+.suvery-container {
+    padding: 0 10vw;
+}
+
+.tip-list {
+    list-style: none;
+    text-align: center;
+    padding: 2vh 10vw;
+}
+
+.tip-list > li {
+    margin: 0.25rem;
+}
+
+.list-container {
+    display: table;
+    margin: auto;
+}
+
+.form {
+    height: 1001px;
+    width: 640px;
+}
+
+@media only screen and (max-width: 700px) {
+    .form {
+        height: 90vh;
+        width: 70vh;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .form {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .suvery-container {
+        padding: 0 4vw;
+    }
+
+    .list-container {
+        display: block;
+        margin: auto;
+    }
+  }
