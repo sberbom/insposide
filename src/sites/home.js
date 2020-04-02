@@ -4,6 +4,8 @@ import SBCard from '../components/card'
 import '../styles/card.css'
 
 import Selda_flamme from '../files/Selda_flamme.JPG'
+import håvard from '../files/håvard.jpg'
+
 
 
 class Home extends React.Component{
@@ -28,8 +30,8 @@ class Home extends React.Component{
                     <SBCard
                         title={"Komunnikasjonsteknologi"}
                         splitTitle={"Komunnikasjons-teknologi"}
-                        description={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). "}
-                        image = {Selda_flamme}
+                        description={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
+                        image = {håvard}
                         />
                     <SBCard
                         title={"Datateknologi"}

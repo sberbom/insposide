@@ -4,8 +4,6 @@ import { withRouter } from 'react-router-dom'
 import Studie from '../components/studie'
 import queryString from 'query-string'
 
-
-
 class Studier extends React.Component {
     constructor(props) {
         super(props)
@@ -49,9 +47,7 @@ class Studier extends React.Component {
                     <Studie
                         ref={this.kommunikasjonsteknologi} 
                         name={"Kommunikasjonsteknologi"}
-                        p1={"Verden vår blir mer og mer tilkoblet. Det er kommunikasjonsteknologien som datanettverk, Internett, telefon og mobiltelefon som er fundamentet for vårt digitaliserte samfunn. E-post, teksttjenester, videokonferanser eller sosiale medier – livet vårt er ikke lenger tenkelig uten slike tjenester, på jobb og i fritida. For å få ny teknologi til å fungere godt, må kommunikasjon mellom enheter være samstemt – og den må være sikker og trygg."}
-                        p2={"Vil du være med på å realisere neste generasjons Internett og løse nye kommunikasjonsutfordringer? Vil du hjelpe å forsvare vårt samfunn mot digitale sikkerhetstrusler? Er du interessert i hvordan en smart by skapes gjennom intelligente løsninger, og på denne måten bidrar til å fremme et bærekraftig samfunn? Da passer dette fremtidsrettete studiet for deg."}
-                        p3={"Studiet kommunikasjonsteknologi og digital sikkerhet gir deg en ettertraktet kompetanse i kommunikasjonssystemer, digital sikkerhet og nett. Du vil ha fag som data, algoritmer, nettverk, matematikk og sikkerhet. I praktiske lab-prosjekter får du bland annet bygge dine egne systemer og nettverk, gjøre etisk hacking for å identifisere sikkerhetstrusler og undersøke egenskaper av større infrastrukturer som mobilnett."}
+                        p1={"Du må ha mye kunnskap om informasjonsteknologi for å lage gode og sikre systemer. Kommunikasjonen mellom enheter skal være trygg, og det skal være minimal sjanse for at systemet slutter å fungere. Du vil de første årene lære å lage apper gjennom programmering, hvordan internett er bygd opp, hvordan du sender datapakker gjennom nettverk, hvordan du hacker andre så du vet hvordan du beskytter deg selv og mye, mye mer. Dette gjør at du kan arbeide innenfor alt som har med teknologi å gjøre. De siste to årene av studiet vil du spesialisere deg innenfor enten Informasjonssikkerhet, som vil gi deg en dypere innføring i hvordan man beskytter informasjon og mer om hacking, Digital økonomi, hvor du vil lære hvordan teknologi og digitale tjenester påvirker samfunnet og forretningsmodeller, eller Nett, tjenester og applikasjoner der du vil lære om arkitekturen som ligger bak alt av nettbaserte tjenester og bygge de slik at de er raske og stabile."}
                         image={"https://www.ntnu.no/documents/144904/0/Kommunikasjonsteknologi.jpg/dfc86db7-7d7c-e169-2dd1-92a8849e577a?t=1576840687835&imagePreview=1"}
                         NTNU={"https://www.ntnu.no/studier/mtkom"}
                     />
