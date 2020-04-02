@@ -11,6 +11,7 @@ class Studier extends React.Component {
         this.datatekonologi = React.createRef()
         this.industriellKjemiOgBioteknologi = React.createRef()
         this.fysikkOgMattematikk = React.createRef()
+        this.entrepenørskolen = React.createRef()
     }
 
     componentDidMount(){
@@ -34,6 +35,9 @@ class Studier extends React.Component {
                 break;
             case "Fysikk og mattematikk":
                 window.scrollTo(0, this.fysikkOgMattematikk.current.offsetTop - 70);
+                break;
+            case "NTNUs Entreprenørskole":
+                window.scrollTo(0, this.entrepenørskolen.current.offsetTop - 70);
                 break;
             default:
                 window.scrollTo(0,0);
@@ -73,6 +77,13 @@ class Studier extends React.Component {
                         image={"https://www.ntnu.no/documents/143156/1267126263/PKF_1622_web_800_410.jpg/f4fb2aa6-970a-406d-8bd2-6f4df8582f1c?t=1450781757676"}
                         p1={"Fysikk og Matematikk (fysmat) gir deg grundig teoretisk kompetanse innen matematiske modeller og fysiske prinsipper. Dersom du er nysgjerrig og glad i matte og fysikk er dette studiet for deg! Du får gjøre forsøk og se fysikken i praksis i tillegg til å lære deg å programmere og bruke dette i beregninger. Disse fagområdene danner en basis for all teknologisk utvikling.  Det sies at etter man har studert fysmat blir man sivilingeniørenes potet – du kan brukes til alt! Dette er fordi man rett og slett blir en god problemløser, og dette trenger du innen ALLE fagfelt! Etter to år på fysmat, vil du kunne velge å spesialisere deg innen en av tre spennende fagområder. Du har valget mellom Teknisk Fysikk - du graver dypere ned i fysikkens verden, Industriell Matematikk – gir deg en bred og anvendbar kompetanse innen matte, Biofysikk og Medisinsk teknologi – hvor du kan være med på å utvikle kunstige organer.  "}
                         NTNU={"https://www.ntnu.no/studier/mtfyma"}
+                    />
+                    <Studie 
+                        ref={this.entrepenørskolen}
+                        name={"NTNUs Entreprenørskole"}
+                        image={"https://www.ntnu.no/documents/143156/1267126263/PKF_1622_web_800_410.jpg/f4fb2aa6-970a-406d-8bd2-6f4df8582f1c?t=1450781757676"}
+                        p1={"NTNUs Entreprenørskole er et masterstudium i teknologi og entreprenørskap der hvert kull består av ca 30 høyt motiverte studenter med ulik teknisk, realfaglig eller samfunnsvitenskapelig bakgrunn som jobber i team for å kommersialisere et teknologi- eller kunnskapsbasert prosjekt. Målet er å bli verdens beste forretningsutviklere, og jobbe i eget selskap når du er ferdig med studiene. Det er kun din egn fantasi som kan begrense hva du kan prøve å starte. Du lærer å vurdere hvilke entreprenørielle ideer er gode og hvilke er dårlige. Du lærer å jobbe i et tverrfaglig team og får kunnskap og verktøy som du trenger i alle fasene i et innovasjonsprosjekt, og du får lære av de aller flinkeste entreprenørene i Norge. Naturligvis kommer du til å feile stort og smått i prosjektet, men du lærer å reise deg igjen og gjør det enda bedre neste gang. Hvis du ikke vil eller kan fortsette i din egen bedrift etter studiene har du en solid utdanning og erfaring som gjør deg ettertraktet av mange spennende, store og små bedrifter. På entreprenørskolen vil alle gjøre verden til et litt bedre sted, ikke fordi det er enkelt, men fordi det er meningsfullt og spennende å utforske nye muligheter."}
+                        NTNU={"https://www.ntnu.no/studier/mientre"}
                     />
                 </div>
             </div>

@@ -5,6 +5,7 @@ import '../styles/card.css'
 
 import Selda_flamme from '../files/Selda_flamme.JPG'
 import håvard from '../files/håvard.jpg'
+import saeid from '../files/saeid.jpg'
 
 
 
@@ -52,6 +53,11 @@ class Home extends React.Component{
                         title={"Fysikk og mattematikk"}
                         description={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan redde kloden!"}
                         image = {Selda_flamme}
+                        />
+                    <SBCard
+                        title={"NTNUs Entreprenørskole"}
+                        description={"Viste du at selskapet bak de kule sekkene fra Douchebags ble starte på NTNUs Entreprenørskole? Eller har du hørt om selskapet Ntention fra samme skole som lager smarte hansker til NASAs astronauter som skal utforske Mars? På NTNUs Entreprenørskole skal du sammen med et team starte et reelt oppstartselskap for å lære om entreprenørskap og teknologi i praksis og for å skape din egen drømmejobb som gründer."}
+                        image = {saeid}
                         />
                 </div>
             </div>
