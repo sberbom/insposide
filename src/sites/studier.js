@@ -8,10 +8,13 @@ class Studier extends React.Component {
     constructor(props) {
         super(props)
         this.kommunikasjonsteknologi = React.createRef()
-        this.datatekonologi = React.createRef()
-        this.industriellKjemiOgBioteknologi = React.createRef()
-        this.fysikkOgMattematikk = React.createRef()
         this.entrepenørskolen = React.createRef()
+        this.industriellØkologi = React.createRef()
+        this.pup = React.createRef()
+        this.fornybar = React.createRef()
+        this.elsys = React.createRef()
+        this.kyb = React.createRef()
+        this.indøk = React.createRef()
     }
 
     componentDidMount(){
@@ -27,17 +30,26 @@ class Studier extends React.Component {
             case "Komunnikasjonsteknologi":
                 window.scrollTo(0, this.kommunikasjonsteknologi.current.offsetTop - 70);
                 break;
-            case "Datateknologi":   
-                window.scrollTo(0, this.datatekonologi.current.offsetTop - 70);
-                break;
-            case "Industiell kjemi og bioteknologi":
-                window.scrollTo(0, this.industriellKjemiOgBioteknologi.current.offsetTop - 70);
-                break;
-            case "Fysikk og mattematikk":
-                window.scrollTo(0, this.fysikkOgMattematikk.current.offsetTop - 70);
-                break;
             case "NTNUs Entreprenørskole":
                 window.scrollTo(0, this.entrepenørskolen.current.offsetTop - 70);
+                break;
+            case "Industriell økologi":
+                window.scrollTo(0, this.industriellØkologi.current.offsetTop - 70);
+                break;
+            case "Produksjon og produktutvikling":
+                window.scrollTo(0, this.pup.current.offsetTop - 70);
+                break;
+            case "Fornybar Energi":
+                window.scrollTo(0, this.fornybar.current.offsetTop - 70);
+                break;
+            case "Elektronisk systemdesign og innovasjon":
+                window.scrollTo(0, this.elsys.current.offsetTop - 70);
+                break;
+            case "Kybernetikk og Robotikk":
+                window.scrollTo(0, this.kyb.current.offsetTop - 70);
+                break;
+            case "Industriell økonomi og teknologiledelse":
+                window.scrollTo(0, this.indøk.current.offsetTop - 70);
                 break;
             default:
                 window.scrollTo(0,0);
@@ -51,39 +63,70 @@ class Studier extends React.Component {
                     <Studie
                         ref={this.kommunikasjonsteknologi} 
                         name={"Kommunikasjonsteknologi"}
-                        p1={"Du må ha mye kunnskap om informasjonsteknologi for å lage gode og sikre systemer. Kommunikasjonen mellom enheter skal være trygg, og det skal være minimal sjanse for at systemet slutter å fungere. Du vil de første årene lære å lage apper gjennom programmering, hvordan internett er bygd opp, hvordan du sender datapakker gjennom nettverk, hvordan du hacker andre så du vet hvordan du beskytter deg selv og mye, mye mer. Dette gjør at du kan arbeide innenfor alt som har med teknologi å gjøre. De siste to årene av studiet vil du spesialisere deg innenfor enten Informasjonssikkerhet, som vil gi deg en dypere innføring i hvordan man beskytter informasjon og mer om hacking, Digital økonomi, hvor du vil lære hvordan teknologi og digitale tjenester påvirker samfunnet og forretningsmodeller, eller Nett, tjenester og applikasjoner der du vil lære om arkitekturen som ligger bak alt av nettbaserte tjenester og bygge de slik at de er raske og stabile."}
-                        image={"https://www.ntnu.no/documents/144904/0/Kommunikasjonsteknologi.jpg/dfc86db7-7d7c-e169-2dd1-92a8849e577a?t=1576840687835&imagePreview=1"}
+                        video={"https://www.youtube.com/embed/pC0t0WhXVBw"}
+                        p1={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
+                        p2={"Du må ha mye kunnskap om informasjonsteknologi for å lage gode og sikre systemer. Kommunikasjonen mellom enheter skal være trygg, og det skal være minimal sjanse for at systemet slutter å fungere. Du vil de første årene lære å lage apper gjennom programmering, hvordan internett er bygd opp, hvordan du sender datapakker gjennom nettverk, hvordan du hacker andre så du vet hvordan du beskytter deg selv og mye, mye mer. Dette gjør at du kan arbeide innenfor alt som har med teknologi å gjøre. De siste to årene av studiet vil du spesialisere deg innenfor enten Informasjonssikkerhet, som vil gi deg en dypere innføring i hvordan man beskytter informasjon og mer om hacking, Digital økonomi, hvor du vil lære hvordan teknologi og digitale tjenester påvirker samfunnet og forretningsmodeller, eller Nett, tjenester og applikasjoner der du vil lære om arkitekturen som ligger bak alt av nettbaserte tjenester og bygge de slik at de er raske og stabile."}
                         NTNU={"https://www.ntnu.no/studier/mtkom"}
-                    />
-                    <Studie
-                        ref={this.datatekonologi}
-                        name={"Datatekonologi"}
-                        video={"https://www.youtube.com/embed/UxSOJVjO28o"}
-                        p1={"Datateknologi er en helt sentral del av alle fremtidsrettede teknologier, som for eksempel kunstig intelligens, medisinsk teknologi og søkemotorteknologi. Datateknologi bidrar til å løse viktige samfunnsutfordringer innen for eksempel klima, bærekraft og helse."}
-                        p2={"På datateknologi lærer du teknikker og metoder for å utvikle datasystemer. Vi dekker hele prosjektløpet fra en løst formulert ide til ferdig løsning."}
-                        NTNU={"https://www.ntnu.no/studier/mtdt"}
-                    />
-                    <Studie 
-                        ref={this.industriellKjemiOgBioteknologi}
-                        name={"Industriell kjemi og bioteknologi"}
-                        video={"https://www.youtube.com/embed/vyZGYICsy5Q"}
-                        p1={"Vil du være med å utvikle energi, materialer, mat og medisiner på en miljøvennlig måte? Mange av de største vitenskapelige nyvinningene i dag skjer innenfor industriell kjemi og bioteknologi. Derfor passer dette studiet for deg som vil bidra til å utvikle løsningene på morgendagens utfordringer."}
-                        p2={"Som sivilingeniør i industriell kjemi og bioteknologi er du godt rustet for fremtiden, med en rekke spennende jobbmuligheter. Du kan blant annet jobbe innen havbruk- og matindustrien, i legemiddelindustrien, ved kjemiske laboratorier eller i olje- og gass-sektoren. Du kan også jobbe som forsker, eller som rådgiver i offentlig forvaltning eller konsulentfirma."}
-                        NTNU={"https://www.ntnu.no/studier/mtkj"}
-                    />
-                    <Studie 
-                        ref={this.fysikkOgMattematikk}
-                        name={"Fysikk og Matematikk "}
-                        image={"https://www.ntnu.no/documents/143156/1267126263/PKF_1622_web_800_410.jpg/f4fb2aa6-970a-406d-8bd2-6f4df8582f1c?t=1450781757676"}
-                        p1={"Fysikk og Matematikk (fysmat) gir deg grundig teoretisk kompetanse innen matematiske modeller og fysiske prinsipper. Dersom du er nysgjerrig og glad i matte og fysikk er dette studiet for deg! Du får gjøre forsøk og se fysikken i praksis i tillegg til å lære deg å programmere og bruke dette i beregninger. Disse fagområdene danner en basis for all teknologisk utvikling.  Det sies at etter man har studert fysmat blir man sivilingeniørenes potet – du kan brukes til alt! Dette er fordi man rett og slett blir en god problemløser, og dette trenger du innen ALLE fagfelt! Etter to år på fysmat, vil du kunne velge å spesialisere deg innen en av tre spennende fagområder. Du har valget mellom Teknisk Fysikk - du graver dypere ned i fysikkens verden, Industriell Matematikk – gir deg en bred og anvendbar kompetanse innen matte, Biofysikk og Medisinsk teknologi – hvor du kan være med på å utvikle kunstige organer.  "}
-                        NTNU={"https://www.ntnu.no/studier/mtfyma"}
                     />
                     <Studie 
                         ref={this.entrepenørskolen}
                         name={"NTNUs Entreprenørskole"}
-                        image={"https://www.ntnu.no/documents/143156/1267126263/PKF_1622_web_800_410.jpg/f4fb2aa6-970a-406d-8bd2-6f4df8582f1c?t=1450781757676"}
-                        p1={"NTNUs Entreprenørskole er et masterstudium i teknologi og entreprenørskap der hvert kull består av ca 30 høyt motiverte studenter med ulik teknisk, realfaglig eller samfunnsvitenskapelig bakgrunn som jobber i team for å kommersialisere et teknologi- eller kunnskapsbasert prosjekt. Målet er å bli verdens beste forretningsutviklere, og jobbe i eget selskap når du er ferdig med studiene. Det er kun din egn fantasi som kan begrense hva du kan prøve å starte. Du lærer å vurdere hvilke entreprenørielle ideer er gode og hvilke er dårlige. Du lærer å jobbe i et tverrfaglig team og får kunnskap og verktøy som du trenger i alle fasene i et innovasjonsprosjekt, og du får lære av de aller flinkeste entreprenørene i Norge. Naturligvis kommer du til å feile stort og smått i prosjektet, men du lærer å reise deg igjen og gjør det enda bedre neste gang. Hvis du ikke vil eller kan fortsette i din egen bedrift etter studiene har du en solid utdanning og erfaring som gjør deg ettertraktet av mange spennende, store og små bedrifter. På entreprenørskolen vil alle gjøre verden til et litt bedre sted, ikke fordi det er enkelt, men fordi det er meningsfullt og spennende å utforske nye muligheter."}
+                        video={"https://www.youtube.com/embed/vsZ6UKHDegc"}
+                        p1={"Viste du at selskapet bak de kule sekkene fra Douchebags ble starte på NTNUs Entreprenørskole? Eller har du hørt om selskapet Ntention fra samme skole som lager smarte hansker til NASAs astronauter som skal utforske Mars? På NTNUs Entreprenørskole skal du sammen med et team starte et reelt oppstartselskap for å lære om entreprenørskap og teknologi i praksis og for å skape din egen drømmejobb som gründer."}
+                        p2={"NTNUs Entreprenørskole er et masterstudium i teknologi og entreprenørskap der hvert kull består av ca 30 høyt motiverte studenter med ulik teknisk, realfaglig eller samfunnsvitenskapelig bakgrunn som jobber i team for å kommersialisere et teknologi- eller kunnskapsbasert prosjekt. Målet er å bli verdens beste forretningsutviklere, og jobbe i eget selskap når du er ferdig med studiene. Det er kun din egn fantasi som kan begrense hva du kan prøve å starte. Du lærer å vurdere hvilke entreprenørielle ideer er gode og hvilke er dårlige. Du lærer å jobbe i et tverrfaglig team og får kunnskap og verktøy som du trenger i alle fasene i et innovasjonsprosjekt, og du får lære av de aller flinkeste entreprenørene i Norge. Naturligvis kommer du til å feile stort og smått i prosjektet, men du lærer å reise deg igjen og gjør det enda bedre neste gang. Hvis du ikke vil eller kan fortsette i din egen bedrift etter studiene har du en solid utdanning og erfaring som gjør deg ettertraktet av mange spennende, store og små bedrifter. På entreprenørskolen vil alle gjøre verden til et litt bedre sted, ikke fordi det er enkelt, men fordi det er meningsfullt og spennende å utforske nye muligheter."}
                         NTNU={"https://www.ntnu.no/studier/mientre"}
+                    />
+                    <Studie 
+                        ref={this.industriellØkologi}
+                        name={"Industriell økologi"}
+                        video={"https://www.youtube.com/embed/8zyeutW0JxY"}
+                        p1={"Industriell økologi er en to-årig internasjonal master på NTNU hvor du lærer om hvordan mennesker og industri påvirker naturen og hvordan vi kan og bør utforme og endre teknologi, forbruk og levemønster for å ta best mulig vare på jordkloden vår. "}
+                        p2={"Er du interessert i bærekraft og kunne du kanskje tenke deg å jobbe med bærekraft i framtiden? Da er nok industriell økologi noe for deg. Dette er en to-årig internasjonal master på NTNU hvor du lærer om samspillet mellom mennesker, industri og natur. Ved industriell økologi er det fire hovedområder du kan spesialisere deg innen økosystemer og naturressurser, sirkulær økonomi, energi, bygninger og transport  og bærekraftig produksjon og forbruk. Industriell økologi er en tverrfaglig master. Dette vil si at du kan begynne på denne masteren uansett hvilken bachelorgrad du har tatt, så lenge du har minst 7,5 studiepoeng i statistikk. Dette betyr også at du får studere med personer som har helt ulike studiebakgrunner (og som kommer fra hele verden!). Selv tok jeg en bachelorgrad i anvendt matematikk ved INSA Toulouse i Frankrike og deretter et år med biologi på NTNU. Dersom du er opptatt av bærekraft og ønsker å jobbe innen et bredt og internasjonalt fagfelt, er denne mastergraden perfekt for deg!"}
+                        NTNU={"https://www.ntnu.no/indecol"}
+                    />
+                    <Studie 
+                        ref={this.pup}
+                        name={"Produksjon og produktutvikling"}
+                        video={"https://www.youtube.com/embed/v4ITGojUNT0"}
+                        p1={"Produksjon og produktutvikling er et utrolig gøy studie som byr på mye praktisk gjennom fagene. Man lærer hvordan man kan bidra til nyskapning, hvordan utvikle produkter på best mulig måte. Man er med på å forme fremtidens teknologiske løsninger."}
+                        p2={"Dersom du er interessert i fysikk og matematikk, men også vil lære litt om hvordan man gjennomfører ting i praksis, er dette studiet for deg! Et produkt er mye mer enn bare en dings man kan ha i hånden, det er alt fra elektriske biler til en prosess hvor man gjenvinner mest mulig varme. Dette studiet lærer deg om maskinkonstruksjoner, fornybar energi, litt programmering, roboteknikk og hvordan man forbedrer produksjon- og energiprosesser. Etterhvert velger man studieretning, der er det mye spennende man kan ta tak i. Man kan velge mellom Ledelse og Systemfag, Produktutvikling og Materialer, Industriell Mekanikk og Energi-, Prosess- og Strømningsteknikk. Det er en stor bredde i studiet, som igjen gjør at mange fagfelt ønsker å ha deg i bedriften sin. Du blir som en slags «potet» i ingeniørfeltet. Dette gjør at du har utrolig mange muligheter etter endt studiet! Det var noe av det viktigste for meg da jeg skulle velge hva jeg ville gjøre resten av livet."}
+                        NTNU={"https://www.ntnu.no/studier/mtprod"}
+                    />
+                    <Studie 
+                        ref={this.fornybar}
+                        name={"Fornybar Energi"}
+                        video={"https://www.youtube.com/embed/f_dZA3Yb6_Y"}
+                        p1={"Utslipp av klimagasser er en av de største truslene mot menneskeheten i dag. Dette synliggjøres blant annet gjennom ekstremvær, vannmangel og utrydding av arter. Men verden trenger stadig mer energi. Hvordan løser vi dette?"}
+                        p2={"Med et voksende behov for miljøvennlig energi i verden, er samfunnet i kontinuerlig utvikling. Hvis du studerer fornybar energi, kan du være med på denne utviklingen! Du får vite det nyeste nye om elektriske fly og bølgekraftverk, noe som danner grunnlaget for at du en dag kan redde verden litt!"}
+                        p3={"Klassene består av i underkant av 70 personer, så vi er en sammensveiset gjeng. Vi har tett kontakt med foreleserne, og studiet er ganske moderne, ettersom forelesninger kan foregå både i klasserom og på video. Når du er ferdig med bacheloren kan du jobbe i energiselskap, industri, konsulentbransjen, forskning og utvikling. Det er også vanlig å studere videre på master. De fleste begynner på toårig master i energi og miljø. Andre muligheter er industriell kybernetikk, helse miljø og sikkerhet, ledelse av teknologi."}
+                        NTNU={"https://www.ntnu.no/studier/biforen"}
+                    />
+                    <Studie 
+                        ref={this.elsys}
+                        name={"Elektronisk systemdesign og innovasjon"}
+                        video={"https://www.youtube.com/embed/WCO1lQ9tyXo"}
+                        p1={"Elektroniske Systemer og Innovasjon er et praktisk studieprogram hvor man lærer masse om elektronikk og programmering. Med denne kunnskapen har man muligheten til å være med på utviklingen av mange forskjellige fagfelt som helseteknologi, romteknologi, kunstig intelligens og mye mer!"}
+                        p2={"Elektronisk Systemdesign og Innovasjon (ELSYS) er studieprogrammet for deg som er interessert i teknologi og har lyst å være med på å forme fremtidens teknologier! Allerede første semester får man et praktisk prosjekt hvor man får føle på det å være ingeniør, uten at det krever forkunnskaper innen programmering og elektronikk. På studiet lærer man om hele spekteret innen elektronikken; fra elektroners oppførsel på kvantenivå til høynivå programmering. Etter hvert spesialiserer man seg innen den av de seks hovedprofilene som virker gøyest. Design av digitale system, signalbehandling, akustikk og nanoelektronikk er noen eksempler på hva man kan spesialisere seg innen. Siden elektronikk og programmering er så essensielt som det er i moderne teknologier er mulighetene mange når man går ut fra ELSYS. Romteknologi, tingenes internett, helseteknologi og utvikling av mikrochipper er bare noen av mulighetene du har etter endt studie!"}                     
+                        NTNU={"https://www.ntnu.no/studier/mtelsys"}
+                    />
+                    <Studie 
+                        ref={this.kyb}
+                        name={"Kybernetikk og Robotikk"}
+                        video={"https://www.youtube.com/embed/WUOtARgYK28"}
+                        p1={"Kybernetikk og Robotikk er et studie som gir deg innsikt i fremtidens teknologier; robotisering, digitalisering og automatisering er typiske ting vi driver med. Hvis du interesserer deg for matematikk eller datateknologi, eller er nysgjerrig på roboter, droner eller autonome systemer, passer dette studiet perfekt for deg!"}                     
+                        p2={"Kybernetikk og Robotikk handler først og fremst om hvordan vi kan overvåke og styre kompliserte systemer. Dette høres kanskje litt fjernt ut, men det er denne teknologien som brukes i blant annet selvkjørende biler, roboter, ultralydavbildning og mye annen spennende teknologi! På studiet har vi mye laboratoriearbeid, det gir oss muligheten til å prøve ut det vi lærer i praksis og se resultater av arbeidet vårt. Kybernetikk og Robotikk er studiet for deg som synes at mange områder innenfor realfag er spennende. I løpet av studiets 5 år får man særlig god kompetanse innenfor både matematikk og datateknologi, og det er dette som danner grunnmuren for å drive med blant annet automatisering og digitalisering. Dette brede kunnskapsområdet gjør at man kan bruke utdanningen innenfor utrolig mange ulike områder.  Kanskje vil du lage selvstyrende roboter, eller ubemannete fremkomstmidler? Eller vil du jobbe innenfor helse og utvikle proteser, eller finne nye måter å detektere sykdommer? Da synes jeg du skal søke!"}
+                        NTNU={"https://www.ntnu.no/studier/mttk"}
+                    />
+                    <Studie 
+                        ref={this.indøk}
+                        name={"Industriell økonomi og teknologiledelse"}
+                        video={"https://www.youtube.com/embed/4KjLup78ckM"}
+                        p1={"Sivilingeniørutdanningen industriell økonomi og teknologiledelse (Indøk) er et tverrfaglig masterprogram ved NTNU. Tradisjonelle sivilingeniøremner kombineres med emner i ledelse og økonomi. Utdanningen er en av de mest attraktive i Norge. "}                     
+                        p2={"Muligheten til å kombinere teknologi med økonomi og ledelse er det som gjør studieprogrammet i Industriell økonomi og teknologiledelse (Indøk) unikt. På Indøk lærer du å analysere komplekse problemstillinger i tverrfaglige team. Du bygger videre på matematikk og fysikk fra videregående, og får også etter hvert dybdekunnskap innenfor økonomi og ledelse."}
+                        p3={"Indøkere er blant de mest ettertraktede studentene i det norske næringsliv, og mange sikrer seg jobb før de er ferdige med studiet. I dag finnes indøkere i over 700 forskjellige bedrifter i Norge og utlandet. De finnes eksempelvis i store industriselskap som Equinor og Orkla, i høyteknologibedrifter som Microsoft, innen bank og forsikring, innen IT og telekommunikasjon, for eksempel Telenor, eller innen konsulentvirksomhet som Accenture, Boston Consulting Group og McKinsey. Valgmulighetene er mange! "}
+                        p4={"Det sosiale miljøet på Indøk er veldig godt, både innad i klassene og på tvers av årskurs. Linjeforeningene har arrangementer hver uke i løpet av semesteret, så det er alltid noe som skjer på Indøk."}
+                        p5={"Gira på å vite mer? Sjekk ut indøk.no for mer info!"}
+                        NTNU={"https://www.ntnu.no/studier/mtiot"}
                     />
                 </div>
             </div>

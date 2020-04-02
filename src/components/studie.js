@@ -16,6 +16,8 @@ const Studie = React.forwardRef((props, ref) => (
         {props.p1 && <p>{props.p1}</p>}
         {props.p2 && <p>{props.p2}</p>}
         {props.p3 && <p>{props.p3}</p>}
+        {props.p4 && <p>{props.p4}</p>}
+        {props.p5 && <p>{props.p5}</p>}
         <a href={props.NTNU} target="_blank"  rel="noopener noreferrer" className="btn btn-primary">Les mer på NTNU.no</a>
     </div>
     )
