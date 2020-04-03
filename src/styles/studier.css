@@ -9,6 +9,19 @@
     background-color: #fff;
 }
 
+.overview-container {
+    text-align: center;
+}
+
+.overview-container > h2 {
+    padding: 1rem 0;
+}
+
+.overview-container > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 480px) {
     .sb-container {
         margin: 12vh 2vw;

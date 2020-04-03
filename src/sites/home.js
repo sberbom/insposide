@@ -16,6 +16,8 @@ import martine from '../files/martine_cut.jpg'
 import kristin from '../files/kristin_cut.jpg'
 import agnes from '../files/agnes_cut.jpeg'
 import selma from '../files/selma_cut.jpg'
+import katrine from '../files/katrine_cut.jpg'
+import fredrik from '../files/fredrik.jpg'
 
 
 class Home extends React.Component{
@@ -96,12 +98,17 @@ class Home extends React.Component{
                     <SBCard
                         title={"Datateknologi"}
                         description={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
-                        image = {"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6W_B3AiQ97WiKjJtgbJb4Srr1CuQslpZOpDNRZ1LLK3UnpQjF&usqp=CAU"}
+                        image = {katrine}
                         />
                     <SBCard
                         title={"Fysikk og Matematikk"}
                         description={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan brukes i alle fagfelt! "}
                         image = {selma}
+                        />
+                    <SBCard
+                        title={"Marin teknikk"}
+                        description={"Har du noen gang sett på flytende vindmøller, en oljeplattform eller et fullastet containerskip og lurt på hvordan det fungerer, utvikles og lages? Da er marin et studie for deg!"}
+                        image = {fredrik}
                         />
                 </div>
             </div>
