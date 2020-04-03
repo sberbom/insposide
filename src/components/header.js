@@ -33,6 +33,7 @@ class Header extends React.Component {
                             </ul>
                         </div>
                     </div>
+                    <div onClick={this.goTo} className="mobile btn btn-primary links-button">Nyttige linker</div>
                 </div>
                 <h1 className="display-4 main-title">{this.props.text}</h1>
             </div>
