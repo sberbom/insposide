@@ -39,6 +39,10 @@
     display: block;
 }
 
+.card-title:hover{
+    cursor: pointer;
+}
+
 .card-fade-overlay {
     position: absolute;
     background: -webkit-linear-gradient(top,hsla(0,0%,100%,0),#fff);

@@ -1,5 +1,6 @@
 .suvery-container {
     padding: 0 10vw;
+    padding-top: calc(66px + 1rem)
 }
 
 .tip-list {
@@ -51,6 +52,7 @@
 
     .suvery-container {
         padding: 0 4vw;
+        padding-top: calc(66px + 1rem);
     }
 
     .list-container {

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/header'
 import SBCard from '../components/card'
-import Survey from '../components/survey'
 import '../styles/card.css'
 
 import header from '../files/header.jpg'
@@ -30,7 +29,7 @@ class Home extends React.Component{
             <div className="home-container">
                 <Header 
                 backgroundImage={header}
-                text={"Lær mer om studiene på NTNU"}
+                text={"Lær mer om teknologistudiene på NTNU"}
                 />
                 <div className="card-container">
                     <SBCard
@@ -40,7 +39,7 @@ class Home extends React.Component{
                         />
                     <SBCard
                         title={"Bygg- og miljøteknikk"}
-                        description={"Vil du være med å forme verden? Vil du sørge for rent drikke vann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater?"}
+                        description={"Vil du være med å forme verden? Vil du sørge for rent drikkevann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater?"}
                         image = {kristin}
                         />
                     <SBCard
@@ -51,7 +50,7 @@ class Home extends React.Component{
                         />
                     <SBCard
                         title={"NTNUs Entreprenørskole"}
-                        description={"Viste du at selskapet bak de kule sekkene fra Douchebags ble starte på NTNUs Entreprenørskole? Eller har du hørt om selskapet Ntention fra samme skole som lager smarte hansker til NASAs astronauter som skal utforske Mars? På NTNUs Entreprenørskole skal du sammen med et team starte et reelt oppstartselskap for å lære om entreprenørskap og teknologi i praksis og for å skape din egen drømmejobb som gründer."}
+                        description={"Visste du at selskapet bak de kule sekkene fra Douchebags ble starte på NTNUs Entreprenørskole? Eller har du hørt om selskapet Ntention fra samme skole som lager smarte hansker til NASAs astronauter som skal utforske Mars? På NTNUs Entreprenørskole skal du sammen med et team starte et reelt oppstartselskap for å lære om entreprenørskap og teknologi i praksis og for å skape din egen drømmejobb som gründer."}
                         image = {saeid}
                         />
                     <SBCard
@@ -105,7 +104,6 @@ class Home extends React.Component{
                         image = {selma}
                         />
                 </div>
-                <Survey />
             </div>
         )
     }

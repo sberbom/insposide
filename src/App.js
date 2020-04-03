@@ -7,6 +7,7 @@ import Home from './sites/home'
 import Studier from './sites/studier'
 import Klasserom from './sites/klasserom'
 import firebase from './firebase'
+import Resources from './sites/resources';
 
 function App() {
   const analytics = firebase.analytics();
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/klasserom">
             <Klasserom/>
+          </Route>
+          <Route path="/ressurser">
+            <Resources/>
           </Route>
           <Route path="/">
             <Home />

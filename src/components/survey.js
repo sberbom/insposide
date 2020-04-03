@@ -26,7 +26,7 @@ class Survey extends React.Component {
     }
 
     getVisited = () => {
-        if(window.localStorage.getItem('velgriktig')){
+        if(window.localStorage.getItem('velgriktig') === "true"){
             this.setState({visited: true})
         }
     }
@@ -45,8 +45,8 @@ class Survey extends React.Component {
                         <li><a onClick={this.setVisited} href="https://utdanningstesten.velgriktig.no/" rel="noopener noreferrer" target="_blank">Utdanningstesten til Velgriktig</a></li>
                         <li><a href="https://velgriktig.no/" rel="noopener noreferrer" target="_blank">Velgriktig.no</a></li>
                         <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/poenggrenser/poenggrenser-tidligere-ar/" rel="noopener noreferrer" target="_blank">Poenggrenser tidligere år</a></li>
-                        <li><a href="https://www.samordnaopptak.no/info/soke/soke-uhg/index.html" rel="noopener noreferrer" target="_blank">Slik søker du sammordna opptak</a></li>
-                        <li><a href="https://www.samordnaopptak.no/info/" rel="noopener noreferrer" target="_blank">Sammordna opptak</a></li>
+                        <li><a href="https://www.samordnaopptak.no/info/soke/soke-uhg/index.html" rel="noopener noreferrer" target="_blank">Slik søker du samordna opptak</a></li>
+                        <li><a href="https://www.samordnaopptak.no/info/" rel="noopener noreferrer" target="_blank">Samordna opptak</a></li>
                         <li><a href="https://utdanning.no/karakterkalkulator/#/" rel="noopener noreferrer" target="_blank">Karakterkalkulator</a></li>
                     </ul>
                     {this.state.visited &&
