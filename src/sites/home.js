@@ -32,7 +32,7 @@ class Home extends React.Component{
                 backgroundImage={Selda_flamme}
                 text={"Lær mer om studiene på NTNU"}
                 />
-                <p className="lead lead-home">15. april er søknadsfristen for høyere utdanning. Det er viktig og for noen et vanskelig
+                <p className="lead lead-home">15. april er søknadsfristen for høyere utdanning. Det er et viktig og for noen et vanskelig
                     valg dere står ovenfor, men frykt ikke! Vi i ENT3R har samlet masse fin informasjon om
                     studiene på NTNU og tips hvordan du kan velge høyere utdanning. Mentorene har laget videoer
                     og skrevet tekster du kan bruke for å lære mer om studiene! Lengere ned på siden finner 
