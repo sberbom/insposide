@@ -22,6 +22,16 @@
     width: 640px;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-btn {
+    align-self: flex-end;
+    margin-right: 6vw;
+}
+
 @media only screen and (max-width: 700px) {
     .form {
         height: 90vh;
