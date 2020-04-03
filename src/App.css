@@ -40,6 +40,10 @@ h3 {
   pointer-events: none;
 }
 
+.lead-home {
+  margin: auto 11vw 3vh 11vw;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -95,4 +99,9 @@ h3 {
     grid-template-columns: 1fr;
     padding: 0 2vw;
   }
+
+  .lead-home {
+    margin: auto 3vw 3vh 3vw;
+  }
 }
+

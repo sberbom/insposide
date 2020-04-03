@@ -19,6 +19,8 @@ class Studier extends React.Component {
         this.bygg = React.createRef()
         this.kjemi = React.createRef()
         this.data = React.createRef()
+        this.emil = React.createRef()
+        this.fysmat = React.createRef()
     }
 
     componentDidMount(){
@@ -66,6 +68,12 @@ class Studier extends React.Component {
                 break;
             case "Datateknologi":
                 window.scrollTo(0, this.data.current.offsetTop - 70);
+                break;
+            case "Energi og miljø":
+                window.scrollTo(0, this.emil.current.offsetTop - 70);
+                break;
+            case "Fysikk og Matematikk":
+                window.scrollTo(0, this.fysmat.current.offsetTop - 70);
                 break;
             default:
                 window.scrollTo(0,0);
@@ -167,8 +175,8 @@ class Studier extends React.Component {
                         ref={this.kjemi}
                         name={"Industriell kjemi og bioteknologi"}
                         video={"https://www.youtube.com/embed/-egvgEP1nO0"}
-                        p1={""}
-                        p2={""}
+                        p1={"Industriell kjemi og bioteknologi hjelper deg med å forstå verden både på et mikroskopisk nivå og i storskala på industrielt nivå. Vil du være en del av utviklingen innenfor alt fra genforskning til hydrogendrevne biler, da bør du søke industriell kjemi!"}
+                        p2={"Industriell kjemi og bioteknologi handler ikke bare om reaksjoner mellom grunnstoff og det mange forbinder med klassisk kjemi fra videregående. Om du er interessert i teknologi og naturfag, er dette kanskje en linje for deg!  De to første årene gir deg en god innføring i alle realfag, noe som er viktig for å kunne forstå hvorfor kjemien er slik den er. Etter andre året velger man spesialisering innenfor bioteknologi, kjemi, kjemisk prosessteknologi eller materialteknologi og energiteknologi.  Som sivilingeniør innenfor et raskt voksende fagfelt blir du svært attraktiv blant arbeidsgivere. Den sammensetningen av kunnskap vi får på industriell kjemi og bioteknologi er det få andre studier som tilbyr, og jobbmulighetene er derfor mange. Alle trenger en kjemiker!"}
                         NTNU={"https://www.ntnu.no/studier/mtkj"}
                     />
                     <Studie 
@@ -178,6 +186,22 @@ class Studier extends React.Component {
                         p1={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
                         p2={"Dersom du er glad i realfag og nysgjerrig på koding, har du kommet til rett studie! På Datateknologi lærer du teknikker for å utvikle datasystemer, og du får brukt det teoretiske fagstoffet til å løse utfordringer i prosjektoppgaver sammen med andre studenter. Det å løse problemer og jobbe i team, blir du altså god på! Dette gjør at mange blir ledere i prosjekter når de kommer ut i jobb, andre blir eksperter på ett enkelt teknologiområde. Man trenger ingen forkunnskaper i programmering før man starter på studiet. De første årene byr på en bred kompetanse innenfor datafag og andre generelle ingeniørfag. I det tredje året kan du spesialisere deg og velge mellom fire studieretninger: Kunstig intelligens, databaser og søk, programvaresystemer og Algoritmer og datamaskiner. Studiet passer for deg som ønsker å skape fremtidens teknologi, i dag jobbes det for eksempel med å bruke datateknologi til å forstå sammenhenger i genmateriale, som kan bidra til å utvikle medisiner og kurere sykdommer. "}
                         NTNU={"https://www.ntnu.no/studier/mtkj"}
+                    />
+                    <Studie 
+                        ref={this.emil}
+                        name={"Energi og miljø"}
+                        video={"https://www.youtube.com/embed/VniTSyTWB7I"}
+                        p1={"På Energi og miljø lærer man om og hvordan man kan bruke teknologi for å produsere fornybar energi og hvordan samfunnet som helhet kan bli mer miljøvennlig. Studiet gir deg den faglige tyngden slik at du kan være med å tenke ut fremtidens løsninger. Dette gjør studiet svært spennende og givende!"}
+                        p2={"Kloden står ovenfor store klimaendringer, og det er et voksende behov for folk med realfaglig utdannelse innenfor bærekraft. På det femårige masterstudiet Energi og miljø (emil) får du innblikk i teknologien bak å spare energi, utvikle smarte løsninger og produsere fornybar energi. Studiet gir bred kunnskap innenfor relevante fag innenfor bærekraft. Når du er ferdigutdannet kan du velge mellom spennende fagfelt. Du kan jobbe innenfor blant annet forskning, industri eller bli rådgiver for andre bransjer som ønsker å bli mer miljøvennlige. Det er kun fantasien som setter grenser! Etter to år på studiet begynner man å spesialisere seg, og da kan man velge mellom tre hovedretninger. Den ene fokuserer på teknologi for produksjon og transport av elektrisk energi, Elektrisk energiteknikk og smarte nett. Du kan også velge en retning som heter Energiplanlegging og miljøanalyse, der du får dypere kunnskap om hvordan bygninger og samfunn som helhet kan spare energi og ressurser. På den siste hovedretningen, Energi og prosessteknikk, lærer du om energiprosesser innenfor vannkraft, vindkraft og lignende."}
+                        NTNU={"https://www.ntnu.no/studier/mtenerg"}
+                    />
+                    <Studie 
+                        ref={this.fysmat}
+                        name={"Fysikk og Matematikk"}
+                        video={"https://www.youtube.com/embed/44-7CfK8UFw"}
+                        p1={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan brukes i alle fagfelt! "}
+                        p2={"Dersom du er nysgjerrig og glad i matte og fysikk er dette studiet for deg! Fysikk og Matematikk (fysmat) gir deg grundig teoretisk kompetanse innen matematiske modeller og fysiske prinsipper. Du får se fysikken i praksis gjennom forsøk i tillegg til å lære deg å programmere og bruke dette i beregninger. Disse fagområdene danner en basis for all teknologisk utvikling. Det sies at etter man har studert fysmat blir man sivilingeniørenes potet – du kan brukes til alt! Dette er fordi man rett og slett blir en god problemløser, og dette trenger du innen ALLE fagfelt! Etter to år på fysmat, vil du kunne velge å spesialisere deg innen en av tre spennende fagområder. Du har valget mellom Teknisk Fysikk hvor du graver dypere ned i fysikkens verden, Industriell Matematikk som gir en bred og anvendbar kompetanse innen matte og Biofysikk og Medisinsk teknologi – hvor du kan være med på å utvikle kunstige organer og blir en smeltedigel mellom fysikk og biologi. "}
+                        NTNU={"https://www.ntnu.no/studier/mtfyma"}
                     />
                 </div>
             </div>

@@ -15,6 +15,8 @@ import sina from '../files/sina_cut.jpg'
 import tobias from '../files/tobias.jpeg'
 import martine from '../files/martine_cut.jpg'
 import kristin from '../files/kristin_cut.jpg'
+import agnes from '../files/agnes_cut.jpeg'
+import selma from '../files/selma_cut.jpg'
 
 
 class Home extends React.Component{
@@ -30,7 +32,23 @@ class Home extends React.Component{
                 backgroundImage={Selda_flamme}
                 text={"Lær mer om studiene på NTNU"}
                 />
+                <p className="lead lead-home">15. april er søknadsfristen for høyere utdanning. Det er viktig og for noen et vanskelig
+                    valg dere står ovenfor, men frykt ikke! Vi i ENT3R har samlet masse fin informasjon om
+                    studiene på NTNU og tips hvordan du kan velge høyere utdanning. Mentorene har laget videoer
+                    og skrevet tekster du kan bruke for å lære mer om studiene! Lengere ned på siden finner 
+                    du en konkurranse der du kan vinne gavekort på 500 kroner! 
+                </p>
                 <div className="card-container">
+                    <SBCard
+                        title={"Lektorutdanning i Realfag"}
+                        description={"Har du lyst til å utvikle din faglige interesse for realfag og samtidig synes formidling er spennende? Da kan lektorutdanningen i realfag være noe for deg. Du får bred realfaglig og teknologisk innsikt samtidig som du opparbeider deg gode pedagogisk evner. Dette gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig sektor. "}
+                        image = {martine}
+                        />
+                    <SBCard
+                        title={"Bygg- og miljøteknikk"}
+                        description={"Vil du være med å forme verden? Vil du sørge for rent drikke vann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater?"}
+                        image = {kristin}
+                        />
                     <SBCard
                         title={"Komunnikasjonsteknologi"}
                         splitTitle={"Komunnikasjons-teknologi"}
@@ -73,24 +91,24 @@ class Home extends React.Component{
                         image = {tobias}
                         />
                     <SBCard
-                        title={"Lektorutdanning i Realfag"}
-                        description={"Har du lyst til å utvikle din faglige interesse for realfag og samtidig synes formidling er spennende? Da kan lektorutdanningen i realfag være noe for deg. Du får bred realfaglig og teknologisk innsikt samtidig som du opparbeider deg gode pedagogisk evner. Dette gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig sektor. "}
-                        image = {martine}
-                        />
-                    <SBCard
-                        title={"Bygg- og miljøteknikk"}
-                        description={"Vil du være med å forme verden? Vil du sørge for rent drikke vann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater?"}
-                        image = {kristin}
-                        />
-                    <SBCard
                         title={"Industriell kjemi og bioteknologi"}
-                        description={""}
-                        image = {""}
+                        description={"Industriell kjemi og bioteknologi hjelper deg med å forstå verden både på et mikroskopisk nivå og i storskala på industrielt nivå. Vil du være en del av utviklingen innenfor alt fra genforskning til hydrogendrevne biler, da bør du søke industriell kjemi!"}
+                        image = {"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6W_B3AiQ97WiKjJtgbJb4Srr1CuQslpZOpDNRZ1LLK3UnpQjF&usqp=CAU"}
+                        />
+                    <SBCard
+                        title={"Energi og miljø"}
+                        description={"På Energi og miljø lærer man om og hvordan man kan bruke teknologi for å produsere fornybar energi og hvordan samfunnet som helhet kan bli mer miljøvennlig. Studiet gir deg den faglige tyngden slik at du kan være med å tenke ut fremtidens løsninger. Dette gjør studiet svært spennende og givende!"}
+                        image = {agnes}
                         />
                     <SBCard
                         title={"Datateknologi"}
                         description={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
-                        image = {""}
+                        image = {"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6W_B3AiQ97WiKjJtgbJb4Srr1CuQslpZOpDNRZ1LLK3UnpQjF&usqp=CAU"}
+                        />
+                    <SBCard
+                        title={"Fysikk og Matematikk"}
+                        description={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan brukes i alle fagfelt! "}
+                        image = {selma}
                         />
                 </div>
                 <Survey />
