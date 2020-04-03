@@ -6,8 +6,11 @@ import SBNavbar from './components/navbar'
 import Home from './sites/home'
 import Studier from './sites/studier'
 import Klasserom from './sites/klasserom'
+import firebase from './firebase'
 
 function App() {
+  const analytics = firebase.analytics();
+  analytics.logEvent("Loaded")
   return (
     <div className="App">
       <SBNavbar/>

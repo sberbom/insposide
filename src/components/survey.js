@@ -40,7 +40,7 @@ class Survey extends React.Component {
                     utdanningstesten til Velgriktig.no er veldig fin! Hvis du går inn på Velgriktig.no sin 
                     utdanningstest via vår link kan du komme tilbake til denne siden og registrere at 
                     du har tatt utdanningstesten. Da er du med i trekningen av to gavekort på 500kr!</p>
-                <div className="list-container card">
+                <div className="list-container card card-wide">
                     <ul className="tip-list">
                         <li><a onClick={this.setVisited} href="https://utdanningstesten.velgriktig.no/" rel="noopener noreferrer" target="_blank">Utdanningstesten til Velgriktig</a></li>
                         <li><a href="https://velgriktig.no/" rel="noopener noreferrer" target="_blank">Velgriktig.no</a></li>

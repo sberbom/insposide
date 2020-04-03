@@ -4,7 +4,7 @@ import SBCard from '../components/card'
 import Survey from '../components/survey'
 import '../styles/card.css'
 
-import Selda_flamme from '../files/Selda_flamme.JPG'
+import header from '../files/header.jpg'
 import håvard from '../files/håvard_cut.jpg'
 import saeid from '../files/saeid_cut.jpg'
 import andrea from '../files/andrea_cut.jpg'
@@ -29,15 +29,9 @@ class Home extends React.Component{
         return(
             <div className="home-container">
                 <Header 
-                backgroundImage={Selda_flamme}
+                backgroundImage={header}
                 text={"Lær mer om studiene på NTNU"}
                 />
-                <p className="lead lead-home">15. april er søknadsfristen for høyere utdanning. Det er viktig og for noen et vanskelig
-                    valg dere står ovenfor, men frykt ikke! Vi i ENT3R har samlet masse fin informasjon om
-                    studiene på NTNU og tips hvordan du kan velge høyere utdanning. Mentorene har laget videoer
-                    og skrevet tekster du kan bruke for å lære mer om studiene! Lengere ned på siden finner 
-                    du en konkurranse der du kan vinne gavekort på 500 kroner! 
-                </p>
                 <div className="card-container">
                     <SBCard
                         title={"Lektorutdanning i Realfag"}

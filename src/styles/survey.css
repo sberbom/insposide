@@ -5,7 +5,11 @@
 .tip-list {
     list-style: none;
     text-align: center;
-    padding: 2vh 10vw;
+    padding-top: 1rem;
+}
+
+.card-wide {
+    width: 100%;
 }
 
 .tip-list > li {
@@ -19,7 +23,7 @@
 
 .form {
     height: 1001px;
-    width: 640px;
+    width: 100%;
 }
 
 .form-container {
