@@ -39,6 +39,11 @@
     padding-top: 1rem;
 }
 
+.list-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .header-video {
     width: 48%;
     border-width: 0px !important;

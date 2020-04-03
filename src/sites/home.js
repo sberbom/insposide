@@ -3,7 +3,7 @@ import Header from '../components/header'
 import SBCard from '../components/card'
 import '../styles/card.css'
 
-import header from '../files/header.jpg'
+import NTNU from '../files/NTNU.jpg'
 import håvard from '../files/håvard_cut.jpg'
 import saeid from '../files/saeid_cut.jpg'
 import andrea from '../files/andrea_cut.jpg'
@@ -30,7 +30,7 @@ class Home extends React.Component{
         return(
             <div className="home-container">
                 <Header 
-                backgroundImage={header}
+                backgroundImage={NTNU}
                 text={"Lær mer om teknologistudiene på NTNU"}
                 />
                 <div className="card-container">

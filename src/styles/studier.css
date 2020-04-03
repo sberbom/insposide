@@ -10,14 +10,22 @@
 }
 
 .overview-container {
+    display: flex;
+    padding: 0 10vw;
     text-align: center;
 }
 
-.overview-container > h2 {
-    padding: 1rem 0;
+.content-header {
+    align-self: center;
+    padding: 3vh 0;
 }
 
-.overview-container > p:hover{
+.overview-container > div > p {
+    padding: 0.2rem 1rem;
+    margin: 0;
+}
+
+.overview-container > div > p:hover{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -25,5 +33,11 @@
 @media only screen and (max-width: 480px) {
     .sb-container {
         margin: 12vh 2vw;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .overview-container {
+        flex-direction: column;
     }
   }

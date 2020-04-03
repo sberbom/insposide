@@ -88,8 +88,9 @@ class Studier extends React.Component {
         return(
             <div className="sb-container" >
                 <div className="studier-container">
+                    <h2 className="content-header">Innhold</h2>
                     <div className="overview-container">
-                        <h2>Innhold</h2>
+                        <div>
                         <p onClick={() => this.scroll("Bygg- og miljøteknikk")}>Bygg- og miljøteknikk</p>
                         <p onClick={() => this.scroll("Datateknologi")}>Datateknologi</p>
                         <p onClick={() => this.scroll("NTNUs Entreprenørskole")}>NTNUs Entreprenørskole</p>
@@ -98,6 +99,8 @@ class Studier extends React.Component {
                         <p onClick={() => this.scroll("Fysikk og Matematikk")}>Fysikk og Matematikk</p>
                         <p onClick={() => this.scroll("Energi og miljø")}>Energi og miljø</p>
                         <p onClick={() => this.scroll("Industriell økologi")}>Industriell økologi</p>
+                        </div>
+                        <div>
                         <p onClick={() => this.scroll("Industriell økonomi og teknologiledelse")}>Industriell økonomi og teknologiledelse</p>
                         <p onClick={() => this.scroll("Industriell kjemi og bioteknologi")}>Industriell kjemi og bioteknologi</p>
                         <p onClick={() => this.scroll("Kybernetikk og Robotikk")}>Kybernetikk og Robotikk</p>
@@ -105,6 +108,7 @@ class Studier extends React.Component {
                         <p onClick={() => this.scroll("Lektorutdanning i Realfag")}>Lektorutdanning i Realfag</p>
                         <p onClick={() => this.scroll("Marin teknikk")}>Marin teknikk</p>
                         <p onClick={() => this.scroll("Produksjon og produktutvikling")}>Produksjon og produktutvikling</p>
+                        </div>
                     </div>
                     <Studie 
                         ref={this.bygg}
