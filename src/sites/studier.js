@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/studier.css'
 import { withRouter } from 'react-router-dom'
 import Studie from '../components/studie'
+import StudieMarin from '../components/studie_marin'
 import queryString from 'query-string'
 
 class Studier extends React.Component {
@@ -22,6 +23,7 @@ class Studier extends React.Component {
         this.emil = React.createRef()
         this.fysmat = React.createRef()
         this.marin = React.createRef()
+        this.maskin=React.createRef()
     }
 
     componentDidMount(){
@@ -79,6 +81,9 @@ class Studier extends React.Component {
             case "Marin teknikk":
                 window.scrollTo(0, this.marin.current.offsetTop - 70);
                 break;
+            case "Maskiningeniør":
+                window.scrollTo(0, this.maskin.current.offsetTop - 70);
+                break;
             default:
                 window.scrollTo(0,0);
         }   
@@ -91,23 +96,24 @@ class Studier extends React.Component {
                     <h2 className="content-header">Innhold</h2>
                     <div className="overview-container">
                         <div>
-                        <p onClick={() => this.scroll("Bygg- og miljøteknikk")}>Bygg- og miljøteknikk</p>
-                        <p onClick={() => this.scroll("Datateknologi")}>Datateknologi</p>
-                        <p onClick={() => this.scroll("NTNUs Entreprenørskole")}>NTNUs Entreprenørskole</p>
-                        <p onClick={() => this.scroll("Elektronisk systemdesign og innovasjon")}>Elektronisk systemdesign og innovasjon</p>
-                        <p onClick={() => this.scroll("Fornybar energi")}>Fornybar Energi</p>
-                        <p onClick={() => this.scroll("Fysikk og Matematikk")}>Fysikk og Matematikk</p>
-                        <p onClick={() => this.scroll("Energi og miljø")}>Energi og miljø</p>
-                        <p onClick={() => this.scroll("Industriell økologi")}>Industriell økologi</p>
+                            <p onClick={() => this.scroll("Bygg- og miljøteknikk")}>Bygg- og miljøteknikk</p>
+                            <p onClick={() => this.scroll("Datateknologi")}>Datateknologi</p>
+                            <p onClick={() => this.scroll("NTNUs Entreprenørskole")}>NTNUs Entreprenørskole</p>
+                            <p onClick={() => this.scroll("Elektronisk systemdesign og innovasjon")}>Elektronisk systemdesign og innovasjon</p>
+                            <p onClick={() => this.scroll("Fornybar energi")}>Fornybar Energi</p>
+                            <p onClick={() => this.scroll("Fysikk og Matematikk")}>Fysikk og Matematikk</p>
+                            <p onClick={() => this.scroll("Energi og miljø")}>Energi og miljø</p>
+                            <p onClick={() => this.scroll("Industriell økologi")}>Industriell økologi</p>
                         </div>
                         <div>
-                        <p onClick={() => this.scroll("Industriell økonomi og teknologiledelse")}>Industriell økonomi og teknologiledelse</p>
-                        <p onClick={() => this.scroll("Industriell kjemi og bioteknologi")}>Industriell kjemi og bioteknologi</p>
-                        <p onClick={() => this.scroll("Kybernetikk og Robotikk")}>Kybernetikk og Robotikk</p>
-                        <p onClick={() => this.scroll("Komunnikasjonsteknologi")}>Kommunikasjonsteknologi</p>
-                        <p onClick={() => this.scroll("Lektorutdanning i Realfag")}>Lektorutdanning i Realfag</p>
-                        <p onClick={() => this.scroll("Marin teknikk")}>Marin teknikk</p>
-                        <p onClick={() => this.scroll("Produksjon og produktutvikling")}>Produksjon og produktutvikling</p>
+                            <p onClick={() => this.scroll("Industriell økonomi og teknologiledelse")}>Industriell økonomi og teknologiledelse</p>
+                            <p onClick={() => this.scroll("Industriell kjemi og bioteknologi")}>Industriell kjemi og bioteknologi</p>
+                            <p onClick={() => this.scroll("Kybernetikk og Robotikk")}>Kybernetikk og Robotikk</p>
+                            <p onClick={() => this.scroll("Komunnikasjonsteknologi")}>Kommunikasjonsteknologi</p>
+                            <p onClick={() => this.scroll("Lektorutdanning i Realfag")}>Lektorutdanning i Realfag</p>
+                            <p onClick={() => this.scroll("Marin teknikk")}>Marin teknikk</p>
+                            <p onClick={() => this.scroll("Maskiningeniør")}>Maskiningeniør</p>
+                            <p onClick={() => this.scroll("Produksjon og produktutvikling")}>Produksjon og produktutvikling</p>
                         </div>
                     </div>
                     <Studie 
@@ -207,7 +213,7 @@ class Studier extends React.Component {
                     />
                     <Studie
                         ref={this.kommunikasjonsteknologi} 
-                        name={"Kommunikasjonsteknologi"}
+                        name={"kommunikasjonsteknologi"}
                         video={"https://www.youtube.com/embed/pC0t0WhXVBw"}
                         p1={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
                         p2={"Du må ha mye kunnskap om informasjonsteknologi for å lage gode og sikre systemer. Kommunikasjonen mellom enheter skal være trygg, og det skal være minimal sjanse for at systemet slutter å fungere. Du vil de første årene lære å lage apper gjennom programmering, hvordan internett er bygd opp, hvordan du sender datapakker gjennom nettverk, hvordan du hacker andre så du vet hvordan du beskytter deg selv og mye, mye mer. Dette gjør at du kan arbeide innenfor alt som har med teknologi å gjøre. De siste to årene av studiet vil du spesialisere deg innenfor enten Informasjonssikkerhet, som vil gi deg en dypere innføring i hvordan man beskytter informasjon og mer om hacking, Digital økonomi, hvor du vil lære hvordan teknologi og digitale tjenester påvirker samfunnet og forretningsmodeller, eller Nett, tjenester og applikasjoner der du vil lære om arkitekturen som ligger bak alt av nettbaserte tjenester og bygge de slik at de er raske og stabile."}
@@ -221,15 +227,25 @@ class Studier extends React.Component {
                         p2={"Er du glad i mennesker, har en iver for realfag og har lyst til at flere skal se gleden, nytten og fasinasjonen med realfag? Da kan lektorutdanningen i realfag være noe for akkurat deg! Lektorutdanningen i realfag gir deg en unik kompetanse i realfagene du brenner mest for, samtidig som du gjennom praksis i studiet får en solid pedagogisk bakgrunn. Du kan være med på å skape teknologiske løsninger for en bærekraftig fremtid, eller finne ut hvordan programmering og digital undervisning best kan implementeres i skolen. Begge deler er mulig på lektorstudiet! Du velger først to av fagene kjemi, fysikk, biologi, informatikk og matte, og fordyper deg videre i ett av fagene. På den måten har du faktisk muligheten til å få to utdanninger på 5 år, både lektorgraden OG en master i et valgt realfag på lik linje med alle som studerer det realfaget. Det er kult og unikt, og gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig næringsliv."}
                         NTNU={"https://www.ntnu.no/studier/mlreal"}
                     />
-                    <Studie 
+                    <StudieMarin 
                         ref={this.marin}
                         name={"Marin teknikk"}
                         video={"https://www.youtube.com/embed/aNyX2zF-i2w"}
-                        p1={"Har du noen gang sett på flytende vindmøller, en oljeplattform eller et fullastet containerskip og lurt på hvordan det fungerer, utvikles og lages? Da er marin et studie for deg!"}
-                        p2={"På marin teknikk lærer du  å utvikle løsninger som skal operere under ekstreme omgivelser både på havoverflaten og havbunnen. Dette kan være skip, plattformer, vindmøller, undervannsroboter og havmerder for fiskeoppdrett."}
-                        p3={"Som kystnasjon har Norge bred erfaring innen utnytting av maritime ressurser og utvikling av maritim teknologi, og den kompetansen man får ved å studere marin teknikk i Trondheim er blant de beste i verden. Marin teknikk vil spille en viktig rolle for å skape et bærekraftig samfunn, og vi er derfor helt avhengig av å lage nye, fornybare løsninger også på havet – dette kan du være med på hvis du studerer marin teknikk!"}
-                        p4={"Marin teknikk er det eneste sivilingeniørstudiet på NTNU i Trondheim med eget campus – Tyholt. Dette gjør at det sosiale er helt unikt for marin, og man får et fellesskap og samlende studentmiljø. Her kan du se mer om det sosiale på marin teknikk:"}
                         NTNU={"https://www.ntnu.no/studier/mtmart"}
+                    />
+                    <Studie 
+                        ref={this.maskin}
+                        name={"Maskiningeniør "}
+                        video={"https://www.youtube.com/embed/PTM14pvsZ6M"}
+                        p1={"Som Maskiningeniør lærer du hvordan mekanismer fungerer på innsiden og du lærer hvordan det blir produsert. Alt fra dørhåndtak, vaskemaskin, Coca-Cola bok og jetmotorer og mer. Vil du være med å utvikle produkter og/eller maskiner, kanskje nettopp din oppfinnsomhet og kreativitet gjør deg til den nye Elon Musk?"}
+                        p2={"Har du interesse for «duppe-dingser» er dette en linje for deg. Du kan velge mellom tre fordypninger: Drift og vedlikehold, VVS og Konstruksjonsteknikk."}
+                        p3={"Drift og vedlikehold: Her er fokuset på hvordan du opererer maskiner og hvordan å drive dem, pluss hvor ofte det skal gjennomføre service."}
+                        p4={"VVS (Varme, Ventilasjon og Sanitærteknikk): Her er fokuset på rør og «piping-design». Hydraulikk, pumper og rør-anlegg med olje, vann eller luft, er begreper du kommer innom. Har du noen gang kjent hvor tett og tung luften blir i et klasserom når ventilasjonen stenges?"}
+                        p5={"Konstruksjonsteknikk: (Det jeg har valgt og kan mest om) Her lærer du å jobbe med materialet og dimensjonere. Du får et dypdykk i hvordan industrien kan fokusere på robust-het, design, sikkerhet, kvalitet og kvantitet. Det er et eget sveisekurs i 3.-året og du kan få litt praktisk erfaring på verkstedet til NTNU."}
+                        p6={"Som maskiningeniør lærer du masse om mekanismer, produksjon og materialer. Hvorfor er så mange flasker som er laget av plast? Hvordan lager du en kirkeklokke som veier 4 tonn? Og hva er forskjellen mellom å lage én Coca-Cola boks og en million? Hvordan ville du valgt å lage den ene boksen. Er det verdt å kjøpe en maskin for 5 millioner kroner for å lage kun én? Med hva du lærer kan du hjelpe en bedrift til å spare millioner av kroner ved å øke produktiviteten/effetiviteten. Og som sagt i filmen, du kan bli nesten alt som omhandler maskiner."}
+                        p7={"Dette er bacheloren Maskiningeniør, linja «Produksjon og produktutvikling» er mastergraden til Maskiningeniør. De er ikke helt like, men omfatter det samme. Jeg har noen venner som startet på bacheloren, men fant ut at de heller ville ta masteren. De fullførte førsteåret og startet på masteren etter det en annen valgte å bli lærer, som er helt normalt, det er lov og ombestemme seg. Jeg derimot likte maskiningeniør bacheloren så jeg fortsatte med den. Etter mine 3 år kan jeg søke om å ta en master. Det nye masterstudiet vil da vare 2 år, og jeg har brukt akkurat like lang tid på min master som om det var det jeg valgte fra starten av. Eneste forskjellen er at jeg hadde valget med å gå ut i jobb etter 3 år, det kan man ikke med master (du må fullføre). Men igjen, Master er en høyere tittel og det er lettere å få seg jobb etterpå."}
+                        p8={"Om du får innvilget opptak på Maskiningeniør bachelor har vi (linjeforeningen) hatt som tradisjon å ringe hver enkelt å sørge for at alle vet hva som skjer etter sommerferien. De svarer også på spørsmål om du har noen."}                       
+                        NTNU={"https://www.ntnu.no/studier/fthingma"}
                     />
                     <Studie 
                         ref={this.pup}
