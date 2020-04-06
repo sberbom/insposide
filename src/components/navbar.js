@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Navbar, Nav } from "react-bootstrap";
 import { Link, withRouter } from 'react-router-dom'
-import ENT3RLogo from '../files/logo.png'
 import '../styles/navbar.css'
 
 function SBNavbar(props)  {
@@ -11,7 +10,7 @@ function SBNavbar(props)  {
             <Link to="/" className="navbar-brand">
                 <img
                     alt="logo"
-                    src={ENT3RLogo}
+                    src={"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/logo.png?alt=media&token=cc698c58-cb9e-44a8-8d39-f48e87cc02b0"}
                     width="140"
                     height="40"
                     className="d-inline-block align-top"

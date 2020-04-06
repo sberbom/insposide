@@ -29,7 +29,7 @@ class Home extends React.Component{
                         />
                     <SBCard
                         title={"Kommunikasjonsteknologi"}
-                        splitTitle={"kommunikasjons-teknologi"}
+                        splitTitle={"Kommunikasjons-teknologi"}
                         description={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
                         image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/h%C3%A5vard_cut.jpg?alt=media&token=8953bd52-ed5e-49f2-9d53-99903627eae4"}
                         />
