@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from './title.js'
+import { Link, withRouter } from 'react-router-dom'
 import '../styles/survey.css'
 
 class Survey extends React.Component {
@@ -42,6 +43,7 @@ class Survey extends React.Component {
                     du har tatt utdanningstesten. Da er du med i trekningen av to gavekort på 500kr!</p>
                 <div className="list-container card card-wide">
                     <ul className="tip-list">
+                        <li><Link to="/spørsmål_og_svar">ENT3Rs spørsmål og svar</Link></li>
                         <li><a onClick={this.setVisited} href="https://utdanningstesten.velgriktig.no/" rel="noopener noreferrer" target="_blank">Utdanningstesten til Velgriktig</a></li>
                         <li><a href="https://velgriktig.no/" rel="noopener noreferrer" target="_blank">Velgriktig.no</a></li>
                         <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/poenggrenser/poenggrenser-tidligere-ar/" rel="noopener noreferrer" target="_blank">Poenggrenser tidligere år</a></li>
@@ -61,4 +63,4 @@ class Survey extends React.Component {
     }
 }
 
-export default Survey;
+export default withRouter(Survey);

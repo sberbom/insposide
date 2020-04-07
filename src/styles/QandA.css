@@ -1,0 +1,19 @@
+.QandA-container {
+    padding: 0 10vw;
+    padding-top: calc(66px + 1rem)
+}
+
+.FAQ-container{
+    padding: 1rem;
+}
+
+.QandA-container > p {
+    padding: 1rem 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .QandA-container {
+        padding: 0 2vw;
+        padding-top: calc(66px + 1rem)
+    }
+  }

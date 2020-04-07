@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, withRouter } from 'react-router-dom'
 import '../styles/navbar.css'
 
@@ -22,8 +22,13 @@ function SBNavbar(props)  {
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/">Hjem</Link>
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/studier">Studier</Link>
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/klasserom">Klasserom</Link>
-                    <Nav.Link target="_blank" href="http://ent3r.no">ENT3R.no</Nav.Link>
-                    <Nav.Link target="_blank" href="https://www.instagram.com/ent3r_trondheim/?hl=nb">Instagram</Nav.Link>
+                    <NavDropdown title="Mer" id="basic-nav-dropdown">
+                        <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/ressurser'); setExpanded(false)}}>Nyttige linker</NavDropdown.Item>
+                        <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/spørsmål_og_svar'); setExpanded(false)}}>Spørsmål og svar</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item target="_blank" className="dropdown-item" href="http://ent3r.no">ENT3R.no</NavDropdown.Item>
+                        <NavDropdown.Item target="_blank" className="dropdown-item" href="https://www.instagram.com/ent3r_trondheim/?hl=nb">Instagram</NavDropdown.Item>
+                    </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

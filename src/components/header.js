@@ -4,8 +4,12 @@ import '../styles/header.css'
 
 class Header extends React.Component {
 
-    goTo = () => {
+    goToR = () => {
         this.props.history.push(`/ressurser`) 
+    }
+
+    goToS = () => {
+        this.props.history.push(`/spørsmål_og_svar`) 
     }
 
     render() {
@@ -24,6 +28,7 @@ class Header extends React.Component {
                         <div className="list-container card desktop">
                             <h5 onClick={this.goTo} className="list-title">Nyttige linker</h5>
                             <ul className="tip-list">
+                                <li><Link to="/spørsmål_og_svar">ENT3Rs spørsmål og svar</Link></li>
                                 <li><a href="https://utdanningstesten.velgriktig.no/" rel="noopener noreferrer" target="_blank">Utdanningstesten til Velgriktig</a></li>
                                 <li><a href="https://velgriktig.no/" rel="noopener noreferrer" target="_blank">Velgriktig.no</a></li>
                                 <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/poenggrenser/poenggrenser-tidligere-ar/" rel="noopener noreferrer" target="_blank">Poenggrenser tidligere år</a></li>
@@ -33,7 +38,10 @@ class Header extends React.Component {
                             </ul>
                         </div>
                     </div>
-                    <div onClick={this.goTo} className="mobile btn btn-primary links-button">Nyttige linker</div>
+                    <div className="links-button-conatainer">
+                        <div onClick={this.goToR} className="mobile btn btn-primary links-button">Nyttige linker</div>
+                        <div onClick={this.goToS} className="mobile btn btn-primary links-button">Spørsmål og svar</div>
+                    </div>
                 </div>
                 <h1 className="display-4 main-title">{this.props.text}</h1>
             </div>

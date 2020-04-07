@@ -1,0 +1,9 @@
+.question-container {
+    /* border-top: 1px solid  black; */
+}
+
+.question:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
