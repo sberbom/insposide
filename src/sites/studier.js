@@ -36,7 +36,7 @@ class Studier extends React.Component {
             case undefined:
                 window.scrollTo(0,0);
                 break;
-            case "Komunnikasjonsteknologi":
+            case "Kommunikasjonsteknologi":
                 window.scrollTo(0, this.kommunikasjonsteknologi.current.offsetTop - 70);
                 break;
             case "NTNUs Entreprenørskole":
@@ -109,7 +109,7 @@ class Studier extends React.Component {
                             <p onClick={() => this.scroll("Industriell økonomi og teknologiledelse")}>Industriell økonomi og teknologiledelse</p>
                             <p onClick={() => this.scroll("Industriell kjemi og bioteknologi")}>Industriell kjemi og bioteknologi</p>
                             <p onClick={() => this.scroll("Kybernetikk og Robotikk")}>Kybernetikk og Robotikk</p>
-                            <p onClick={() => this.scroll("Komunnikasjonsteknologi")}>Kommunikasjonsteknologi</p>
+                            <p onClick={() => this.scroll("Kommunikasjonsteknologi")}>Kommunikasjonsteknologi</p>
                             <p onClick={() => this.scroll("Lektorutdanning i Realfag")}>Lektorutdanning i Realfag</p>
                             <p onClick={() => this.scroll("Marin teknikk")}>Marin teknikk</p>
                             <p onClick={() => this.scroll("Maskiningeniør")}>Maskiningeniør</p>
@@ -213,7 +213,7 @@ class Studier extends React.Component {
                     />
                     <Studie
                         ref={this.kommunikasjonsteknologi} 
-                        name={"kommunikasjonsteknologi"}
+                        name={"Kommunikasjonsteknologi"}
                         video={"https://www.youtube.com/embed/pC0t0WhXVBw"}
                         p1={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
                         p2={"Du må ha mye kunnskap om informasjonsteknologi for å lage gode og sikre systemer. Kommunikasjonen mellom enheter skal være trygg, og det skal være minimal sjanse for at systemet slutter å fungere. Du vil de første årene lære å lage apper gjennom programmering, hvordan internett er bygd opp, hvordan du sender datapakker gjennom nettverk, hvordan du hacker andre så du vet hvordan du beskytter deg selv og mye, mye mer. Dette gjør at du kan arbeide innenfor alt som har med teknologi å gjøre. De siste to årene av studiet vil du spesialisere deg innenfor enten Informasjonssikkerhet, som vil gi deg en dypere innføring i hvordan man beskytter informasjon og mer om hacking, Digital økonomi, hvor du vil lære hvordan teknologi og digitale tjenester påvirker samfunnet og forretningsmodeller, eller Nett, tjenester og applikasjoner der du vil lære om arkitekturen som ligger bak alt av nettbaserte tjenester og bygge de slik at de er raske og stabile."}
