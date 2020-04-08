@@ -1,12 +1,66 @@
 import React from 'react';
 import '../styles/klasserom.css'
+import firebase from '../firebase'
+import 'firebase/auth';
+import { withRouter } from 'react-router-dom'
+import Login from '../components/login'
 
-function Klasserom(props) {
+class Klasserom extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showLogin: false,
+            error: false
+        }
+        this.passwordRef = React.createRef()
+    }
+
+    componentDidMount() {
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                this.setState({showLogin: false})
+            } else {
+                this.setState({showLogin: true})
+            }
+          });
+    }
+
+    signIn = () => {
+        const password = this.passwordRef.current
+        if (password.value === "Trondheim") {
+            firebase.auth().signInAnonymously().then(this.setState({showLogin: false})).catch(function(error) {
+                // Handle Errors here.
+                // var errorCode = error.code;
+                // var errorMessage = error.message;
+                // ...
+              });
+        }
+        else{
+            this.setState({error: true})
+        }
+        
+    }
+
+    // logOut = () => {
+    //     firebase.auth().signOut().then(function() {
+    //         // Sign-out successful.
+    //       }, function(error) {
+    //         // An error happened.
+    //       });
+    // }
+    
+    onHide = () => {
+        this.props.history.push('/')
+    }
+
+    render() {
         return(
             <div>
                 <div class="jumbotron-klasserom j_forside-klasserom"></div>
                 <div class="info-container-klasserom">
                 <div class="info-text-klasserom"> 
+                    <Login show={this.state.showLogin} onSignIn={this.signIn} passwordRef={this.passwordRef} error={this.state.error} onHide={this.onHide}/>
+                    {/* <Button onClick={this.logOut}>Log out</Button> */}
                     <h3>Informasjon om <br class="mobile-klasserom"/> ENT3R Trondheim og COVID-19</h3>
                     <p class="lead-klasserom">
                         I forbindelse med spredningen av koronaviruset har ENT3R Trondheim bestemt å 
@@ -65,6 +119,7 @@ function Klasserom(props) {
             </div>
         </div>
         )
+    }
 }
 
-export default Klasserom;
+export default withRouter(Klasserom);
