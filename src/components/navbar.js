@@ -21,7 +21,7 @@ function SBNavbar(props)  {
                 <Nav className="mr-auto">
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/">Hjem</Link>
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/studier">Studier</Link>
-                    <Link className="nav-link" onClick={() => setExpanded(false)} to="/klasserom">Klasserom</Link>
+                    {/* <Link className="nav-link" onClick={() => setExpanded(false)} to="/klasserom">Klasserom</Link> */}
                     <NavDropdown title="Mer" id="basic-nav-dropdown">
                         <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/ressurser'); setExpanded(false)}}>Nyttige linker</NavDropdown.Item>
                         <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/spørsmål_og_svar'); setExpanded(false)}}>Spørsmål og svar</NavDropdown.Item>

@@ -8,9 +8,6 @@ function Klasserom(props) {
                 <div class="info-container-klasserom">
                 <div class="info-text-klasserom"> 
                     <h3>Informasjon om <br class="mobile-klasserom"/> ENT3R Trondheim og COVID-19</h3>
-                    <p className="lead lead-klassrom">ENT3R er ferdig for i år. Vi har hatt masse gøy er er veldig glad for at akkurat du har vært med på ENT3R!
-                        Påmelding til neste skoleår kommer når skoleåret nærmer seg. Vi håper å se deg!
-                    </p>
                     <p class="lead-klasserom">
                         I forbindelse med spredningen av koronaviruset har ENT3R Trondheim bestemt å 
                         avlyse alle fysiske ENT3R-timer. 

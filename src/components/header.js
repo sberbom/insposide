@@ -17,9 +17,6 @@ class Header extends React.Component {
             <div>
                 <div className="header-container">
                     <div className="header-image" style={{backgroundImage: `url(${this.props.backgroundImage})`}}/>
-                    <p className="lead lead-home big">ENT3R er ferdig for i år. Vi har hatt masse gøy er er veldig glad for at akkurat du har vært med på ENT3R!
-                        Påmelding til neste skoleår kommer når skoleåret nærmer seg. Vi håper å se deg!
-                    </p>
                     <p className="lead lead-home">Er du usikker på hva du ønsker å velge som høyere utdanning? Vi i ENT3R har samlet masse informasjon om
                         studiene på NTNU og tips til hvordan du kan velge høyere utdanning. Mentorene har laget videoer
                         og skrevet tekster du kan bruke for å lære mer om studiene!
