@@ -25,7 +25,7 @@ function SBNavbar(props)  {
                     {/* <Link className="nav-link" onClick={() => setExpanded(false)} to="/klasserom">Klasserom</Link> */}
                     <NavDropdown title="Mer" id="basic-nav-dropdown">
                         <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/ressurser'); setExpanded(false)}}>Nyttige linker</NavDropdown.Item>
-                        {/* <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/spørsmål_og_svar'); setExpanded(false)}}>Spørsmål og svar</NavDropdown.Item> */}
+                        <NavDropdown.Item className="dropdown-item" onClick={() => {props.history.push('/spørsmål_og_svar'); setExpanded(false)}}>Spørsmål og svar</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item target="_blank" className="dropdown-item" href="http://ent3r.no">ENT3R.no</NavDropdown.Item>
                         <NavDropdown.Item target="_blank" className="dropdown-item" href="https://www.instagram.com/ent3r_trondheim/?hl=nb">Instagram</NavDropdown.Item>

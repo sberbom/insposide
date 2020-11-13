@@ -65,4 +65,8 @@
         margin-top: 2rem;
     }
 
+    .desktop{
+        display: none;
+    }
+
   }

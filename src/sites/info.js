@@ -13,7 +13,7 @@ class Info extends React.Component{
         return(
             <div>
                 <div className="header-container">
-                    <div className="header-image" style={{backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/NTNU.jpg?alt=media&token=05257554-bf64-4833-aa52-bf504431b480)`}}/>
+                    <div className="header-image desktop" style={{backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/NTNU.jpg?alt=media&token=05257554-bf64-4833-aa52-bf504431b480)`}}/>
                     <h1 className="display-4 main-title">{'Hva skjer i ENT3R Trondheim?'}</h1>
                 </div>
                 <div className="info-video-container">
