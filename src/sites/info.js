@@ -1,5 +1,4 @@
 import React from 'react';
-import {Button} from 'react-bootstrap'
 import '../styles/info.css'
 
 class Info extends React.Component{
@@ -36,9 +35,9 @@ class Info extends React.Component{
                         <h2>Elevundersøkelsen</h2>
                         <p>Vi i ENT3R vil gjerne bli enda bedre! For å få til det må vi vite hvordan du har det og hva du synes om ENT3R. 
                             Vi vil derfor at du svarer på elevundersøkelsen. Elevundersøkelsen er anonym. </p>
-                        <Button>
+                        <a  rel="noopener noreferrer" className="btn btn-primary" target="_blank" href="https://response.questback.com/realfagsrekruttering/jepskraavf">
                             Elevundersøkelsen
-                        </Button>
+                        </a>
                     </div>
                 </div>
             </div>
