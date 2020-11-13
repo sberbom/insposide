@@ -45,6 +45,23 @@
     margin-bottom: 1rem;
 }
 
+.digital-elevkveld-container {
+    width: 40%;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.digital-elevkveld-container > h2 {
+    text-align: center;
+}
+
+.digital-elevkveld-container > p {
+    text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
     .card-container {
       padding: 0 2vw;
@@ -67,6 +84,12 @@
 
     .desktop{
         display: none;
+    }
+
+    .digital-elevkveld-container {
+        width: 100%;
+        padding: 0 1rem;
+        margin-top: 2rem;
     }
 
   }

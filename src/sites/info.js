@@ -40,6 +40,18 @@ class Info extends React.Component{
                         </a>
                     </div>
                 </div>
+                <div className="digital-elevkveld-container">
+                    <h2>Digital elevkveld</h2>
+                    <p>
+                        25. November skal vi ha digital elevkveld om studieteknikk med Olav Schewe. 
+                        Å lykkes som elev og student handler ikke bare om å være smart. 
+                        Faktisk mener psykologer nå at så mye som 70% av det vi lærer skyldes studieteknikk og motivasjon. 
+                        Denne elevkvelden skal vi lære hvordan studenter og elever kan bli bedre til å lære ved hjelp av studieteknikk.  
+                    </p>
+                    <a  rel="noopener noreferrer" className="btn btn-primary" target="_blank" href="https://elevkveld.no">
+                        Les mer på elevkveld.no
+                    </a>
+                </div>
             </div>
         )
     }
