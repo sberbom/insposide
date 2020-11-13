@@ -23,8 +23,8 @@ class Info extends React.Component{
                     <div className="tentamenstimer-container">
                         <h2>Tentamenstimer</h2>
                         <p>I uke 48, 49 og 50 skal vi ha digitale tentamenstimer. 
-                            I timene kan du komme å få hjelp med lekser eller til å øve til prøve. 
-                            Timene vil være i de digitale klasserommene våre. Det vil være time mandag til torsdag fra 16:00 til 18:00. 
+                            I timene kan du komme å få hjelp med lekser, til å øve til prøve, eller andre ting du måtte lure på. 
+                            Timene vil være i de digitale klasserommene våre, mandager til torsdager fra 16:00 til 18:00. 
                             Du kan komme på så mange timer du vil. 
                             Link til klasserommene blir sendt ut til alle påmeldte samme dag som timen.  
                         </p>
