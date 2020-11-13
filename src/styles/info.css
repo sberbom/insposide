@@ -1,0 +1,68 @@
+.info-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-container > * > h2 {
+    text-align: center;
+}
+
+.info-container > * > p {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.info-container > * > .btn {
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.tentamenstimer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.elevundersøkelsen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.info-video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-video{
+    height: 60vh;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+      padding: 0 2vw;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .tentamenstimer-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .elevundersøkelsen-container{
+        width: 100%;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+
+  }
