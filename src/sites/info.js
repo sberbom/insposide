@@ -34,10 +34,12 @@ const Info = () => {
                 </div>
                 <div className="elevundersøkelsen-container">
                     <h2>Elevundersøkelsen</h2>
-                    <p>Vi i ENT3R vil gjerne bli enda bedre! For å få til det må vi vite hvordan du har det og hva du synes om ENT3R. 
-                        Vi vil derfor at du svarer på elevundersøkelsen. Elevundersøkelsen er anonym. 
-                        Etter du har svart på undersøkelsen kan du komme tilbake til denne siden og registrere det. 
-                        Alle som registrerer seg med i trekningen av et midtbygavekort. </p>
+                    <p>
+                        Vi i ENT3R Trondheim vil gjerne bli enda bedre! For å få til det må vi vite hvordan du har det og hva du synes om ENT3R. 
+                        Vi håper derfor at du har lyst til å svare på vær anonyme elevundersøkelse. 
+                        Etter du har svart på undersøkelsen kan du komme tilbake til denne siden for å registrere deg, 
+                        da blir du med i trekningen av et midtbygavekort med en verdi på 500 kroner. 
+                    </p>
                     {isRegister && 
                         <a  rel="noopener noreferrer" className="btn btn-primary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe4Gkq9soSkhWZxsntqwtBKhsSJ-m-qfaHYS5qDllqzIutCow/viewform?usp=sf_link">
                             Registrer at du har tatt elevundersøkelsen
