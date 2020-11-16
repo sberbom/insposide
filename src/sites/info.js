@@ -17,7 +17,7 @@ const Info = () => {
                 <h1 className="display-4 main-title">{'Hva skjer i ENT3R Trondheim?'}</h1>
             </div>
             <div className="info-video-container">
-                <iframe className="info-video" title="info-video" src="https://www.youtube.com/embed/KrlYk6miGtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen="allowfullscreen"></iframe>
+                <iframe className="info-video" title="info-video" src="https://www.youtube.com/embed/K6Wsp2n68fQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen="allowfullscreen"></iframe>
             </div>
             <div className="info-container">
                 <div className="tentamenstimer-container">
