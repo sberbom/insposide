@@ -20,7 +20,7 @@ function SBNavbar(props)  {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/">Hjem</Link>
-                    <Link className="nav-link" onClick={() => setExpanded(false)} to="/info">Infomasjon</Link>
+                    {/* <Link className="nav-link" onClick={() => setExpanded(false)} to="/info">Infomasjon</Link> */}
                     <Link className="nav-link" onClick={() => setExpanded(false)} to="/studier">Studier</Link>
                     {/* <Link className="nav-link" onClick={() => setExpanded(false)} to="/klasserom">Klasserom</Link> */}
                     <NavDropdown title="Mer" id="basic-nav-dropdown">
@@ -29,7 +29,7 @@ function SBNavbar(props)  {
                         <NavDropdown.Divider />
                         <NavDropdown.Item target="_blank" className="dropdown-item" href="http://ent3r.no">ENT3R.no</NavDropdown.Item>
                         <NavDropdown.Item target="_blank" className="dropdown-item" href="https://www.instagram.com/ent3r_trondheim/?hl=nb">Instagram</NavDropdown.Item>
-                        <NavDropdown.Item target="_blank" className="dropdown-item" href="https://elevkveld.no">Elevkveld</NavDropdown.Item>
+                        {/* <NavDropdown.Item target="_blank" className="dropdown-item" href="https://elevkveld.no">Elevkveld</NavDropdown.Item> */}
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

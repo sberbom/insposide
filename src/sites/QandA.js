@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/QandA.css'
 import Title from '../components/title'
 import Question from '../components/question'
-import QuestionForm from '../components/questionForm'
+// import QuestionForm from '../components/questionForm'
 
 class QandA extends React.Component {
 
@@ -14,7 +14,7 @@ class QandA extends React.Component {
         return(
             <div className="QandA-container">
                 <Title title="Spørsmål og svar om høyere utdanning"/>
-                <p className="lead">Det er utallige studiemuligheter i Norge, derfor kan det være vanskelig å få oversikt over mulighetene som er der. Kanskje er det et studie som passer perfekt for deg, men du har ikke funnet det eller skjønt helt hva det innebærer? Nedenfor har vi samlet spørsmål som gikk igjen da våre egne mentorer skulle velge høyere utdanning for at du skal slippe å lure på det samme. Hvis du har spørsmål utover disse kan du sende inn et spørsmål nederst på siden, så vil en mentor svare deg så fort som mulig!</p>
+                <p className="lead">Det er utallige studiemuligheter i Norge, derfor kan det være vanskelig å få oversikt over mulighetene som er der. Kanskje er det et studie som passer perfekt for deg, men du har ikke funnet det eller skjønt helt hva det innebærer? Nedenfor har vi samlet spørsmål som gikk igjen da våre egne mentorer skulle velge høyere utdanning for at du skal slippe å lure på det samme.</p>
                 <div className="FAQ-container list-group">
                     <Question
                         question="Hva er egentlig en ingeniør?"
@@ -66,7 +66,7 @@ class QandA extends React.Component {
                         question="Hva skjer om jeg ikke har de fagene som trengs for å komme inn på det studiet jeg vil?"
                         p1="NTNU tilbyr forkurs, som går over enten ett eller to semester. Der kan man få de fagene man trenger for å komme inn på ingeniørstudiet. Dette kan du lese mer om på https://www.ntnu.no/studier/ftforkurs"
                     />
-                    <QuestionForm />
+                    {/* <QuestionForm /> */}
                 </div>
             </div>
         )
