@@ -126,9 +126,9 @@ class Studier extends React.Component {
                         p4={"Men bygg og miljøteknikk stopper ikke der. Med retninger innen vannforsyning, rensing og vannkraft har du store muligheter for å gjøre verden til et bedre sted.  Infrastruktur og transport er en annen fordypning der du bla. kan få muligheten til å drive byutvikling og bygge infrastruktur. "}
                         p5={"Med en sivilingeniør grad fra bygg og miljøteknikk har du veldig mange muligheter innen en stor bransje. Linjen er en av NTNU sine største linjer og dermed også en linje med et stort mangfold. Så her finner du lett noen å trives med! "}
                         NTNU={"https://www.ntnu.no/studier/mtbygg"}
-                        fagkrav={""}
-                        snittOrd={55}
-                        snittFør={55}
+                        fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
+                        snittOrd={"54,9"}
+                        snittFør={"52,5"}
                         VGSfag={"Fysikk"}
                     />
                     <Studie 
@@ -159,6 +159,10 @@ class Studier extends React.Component {
                         p1={"Elektroniske Systemer og Innovasjon er et praktisk studieprogram hvor man lærer masse om elektronikk og programmering. Med denne kunnskapen har man muligheten til å være med på utviklingen av mange forskjellige fagfelt som helseteknologi, romteknologi, kunstig intelligens og mye mer!"}
                         p2={"Elektronisk Systemdesign og Innovasjon (ELSYS) er studieprogrammet for deg som er interessert i teknologi og har lyst å være med på å forme fremtidens teknologier! Allerede første semester får man et praktisk prosjekt hvor man får føle på det å være ingeniør, uten at det krever forkunnskaper innen programmering og elektronikk. På studiet lærer man om hele spekteret innen elektronikken; fra elektroners oppførsel på kvantenivå til høynivå programmering. Etter hvert spesialiserer man seg innen den av de seks hovedprofilene som virker gøyest. Design av digitale system, signalbehandling, akustikk og nanoelektronikk er noen eksempler på hva man kan spesialisere seg innen. Siden elektronikk og programmering er så essensielt som det er i moderne teknologier er mulighetene mange når man går ut fra ELSYS. Romteknologi, tingenes internett, helseteknologi og utvikling av mikrochipper er bare noen av mulighetene du har etter endt studie!"}                     
                         NTNU={"https://www.ntnu.no/studier/mtelsys"}
+                        fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
+                        snittOrd={"59,1"}
+                        snittFør={"57,8"}
+                        VGSfag={"Fysikk"}
                     />
                     <Studie 
                         ref={this.fornybar}
