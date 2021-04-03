@@ -59,10 +59,6 @@ class QandA extends React.Component {
                         p1="Studielån er et lån alle studenter får fra Lånekassen. Etter fullført studium vil 40% av lånet bli omgjort til stipend om du har fått alle studiepoengene som kreves for lånet. Det vil si at du får 40%, mens resten blir gjort om til et lån. Det kreves 30 studiepoeng per semester. Dette lånet trenger du ikke å betale renter på før etter du har sluttet å studere, og derfor er det et veldig bra lån å ha!"
                     />
                     <Question
-                        question="Hvordan påvirker koronaviruset opptak til høyere utdanning?"
-                        p1="Slik det ser ut nå vil ikke opptaket påvirkes av koronavirus, men situasjonen er i stadig endring, og det anbefales å lese på nettsidene til Samordna Opptak og det spesifikke studiestedet du søker deg til for mer utfyllende informasjon. Fristen for høyere utdanning vil gjennomføres som planlagt, og man må søke på ordinære studieplasser innen 15. april. Du søker ved å gå inn på Samordna Opptak sine sider."
-                    />
-                    <Question
                         question="Hva skjer om jeg ikke har de fagene som trengs for å komme inn på det studiet jeg vil?"
                         p1="NTNU tilbyr forkurs, som går over enten ett eller to semester. Der kan man få de fagene man trenger for å komme inn på ingeniørstudiet. Dette kan du lese mer om på https://www.ntnu.no/studier/ftforkurs"
                     />

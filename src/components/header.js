@@ -17,10 +17,17 @@ class Header extends React.Component {
             <div>
                 <div className="header-container">
                     <div className="header-image" style={{backgroundImage: `url(${this.props.backgroundImage})`}}/>
-                    <p className="lead lead-home">Er du usikker på hva du ønsker å velge som høyere utdanning? Vi i ENT3R har samlet masse informasjon om
-                        studiene på NTNU og tips til hvordan du kan velge høyere utdanning. Mentorene har laget videoer
-                        og skrevet tekster du kan bruke for å lære mer om studiene!
+                    <p className="lead lead-home">Er du usikker på hva du ønsker å velge som høyere utdanning? 
+                        Vi i ENT3R har samlet masse informasjon om mange av realfagsstudiene ved NTNU i Trondheim, 
+                        og tips og verktøy til hvordan du kan velge høyere utdanning. 
+                        Mentorene har laget korte videoer der de forteller om deres eget studium og skrevet tekster du kan 
+                        bruke for å lære mer om studiene! 
+                        <br/><br/>
+                        Den 12. april holder ENT3R Trondheim et digitalt arrangement fra 18:15-19:15. 
+                        Det vil foregå på en digital plattform der dere kan hoppe inn i rom med representantene 
+                        for de ulike studiene og stille spørsmål.
                     </p>
+                    {/* <a href="#" target="_blank"  rel="noopener noreferrer" className="btn btn-primary påmelding-btn">Meld deg på her!</a> */}
                     <div className="heade-info-container">
                         <iframe className="header-video" allowFullScreen="allowfullscreen" src={"https://www.youtube.com/embed/aUFxiIip8XY"} title="headervideo"></iframe>
                         <div className="list-container card desktop">

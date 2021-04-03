@@ -13,7 +13,14 @@ const StudieMarin = React.forwardRef((props, ref) => (
         }
         {props.image && <img className="study-header" src={props.image} alt="study" />}
         {props.video && <iframe className="study-video" allowFullScreen="allowfullscreen" src={props.video} title={props.name}></iframe>}
-        <p>Har du noen gang sett på flytende vindmøller, en oljeplattform eller et fullastet containerskip og lurt på hvordan det fungerer, utvikles og lages? Da er marin et studie for deg!</p>
+        <p>
+            <ul className="infoBox-list">
+                <li>Fagkrav: R1, R2 (Karakter 4 i R2), Fysikk 1</li>
+                <li>Karaktersnitt 2020 ordinær: 55,3</li>
+                <li>Karaktersnitt 2020 førstregang: 54,7</li>
+                <li>Mest relevante VGS fag: Matte</li>
+            </ul>
+            Har du noen gang sett på flytende vindmøller, en oljeplattform eller et fullastet containerskip og lurt på hvordan det fungerer, utvikles og lages? Da er marin et studie for deg!</p>
         <p>På marin teknikk lærer du  å utvikle løsninger som skal operere under ekstreme omgivelser både på havoverflaten og havbunnen. Dette kan være skip, plattformer, vindmøller, undervannsroboter og havmerder for fiskeoppdrett.</p>
         <p>Som kystnasjon har Norge bred erfaring innen utnytting av maritime ressurser og utvikling av maritim teknologi, og den kompetansen man får ved å studere marin teknikk i Trondheim er blant de beste i verden. Marin teknikk vil spille en viktig rolle for å skape et bærekraftig samfunn, og vi er derfor helt avhengig av å lage nye, fornybare løsninger også på havet – dette kan du være med på hvis du studerer marin teknikk! Se mer om studiet <a href="https://www.youtube.com/watch?v=TEGKpzlrFtM" rel="noopener noreferrer" target="_blank">her</a>.</p>
         <p>Marin teknikk er det eneste sivilingeniørstudiet på NTNU i Trondheim med eget campus – Tyholt. Dette gjør at det sosiale er helt unikt for marin, og man får et fellesskap og samlende studentmiljø. <a href="https://www.youtube.com/watch?v=pdEkqNqGvx0" rel="noopener noreferrer" target="_blank">Her</a> kan du se mer om det sosiale på marin teknikk.</p>

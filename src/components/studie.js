@@ -13,7 +13,23 @@ const Studie = React.forwardRef((props, ref) => (
         }
         {props.image && <img className="study-header" src={props.image} alt="study" />}
         {props.video && <iframe className="study-video" allowFullScreen="allowfullscreen" src={props.video} title={props.name}></iframe>}
-        {props.p1 && <p>{props.p1}</p>}
+        {props.p1 && <p>
+            {props.egetOpptak ?
+            <ul className="infoBox-list">
+                <li>
+                    {props.name} har eget opptak se 
+                    <a href={props.NTNU} target="_blank"  rel="noopener noreferrer" className="text-link"> NTNU.no</a>
+                </li>
+            </ul>
+            :
+            <ul className="infoBox-list">
+                <li>Fagkrav: {props.fagkrav}</li>
+                <li>Karaktersnitt 2020 ordinær: {props.snittOrd}</li>
+                <li>Karaktersnitt 2020 førstregang: {props.snittFør}</li>
+                <li>Mest relevante VGS fag: {props.VGSfag}</li>
+            </ul>
+            }
+            {props.p1}</p>}
         {props.p2 && <p>{props.p2}</p>}
         {props.p3 && <p>{props.p3}</p>}
         {props.p4 && <p>{props.p4}</p>}

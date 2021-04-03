@@ -41,7 +41,8 @@ h3 {
 }
 
 .lead-home {
-  margin: auto 11vw 3vh 11vw;
+  margin: auto 11vw 1rem 11vw;
+  text-align: justify;
 }
 
 @media (prefers-reduced-motion: no-preference) {

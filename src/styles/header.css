@@ -64,6 +64,14 @@
     text-align: center;
 }
 
+.påmelding-btn {
+    font-size: 1.25rem;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem 3rem;
+}
+
 @media only screen and (max-width: 480px) {
     .main-title {
         width: 96vw;
