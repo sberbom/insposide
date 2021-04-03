@@ -25,7 +25,7 @@ const Studie = React.forwardRef((props, ref) => (
             <ul className="infoBox-list">
                 <li>Fagkrav: {props.fagkrav}</li>
                 <li>Karaktersnitt 2020 ordinær: {props.snittOrd}</li>
-                <li>Karaktersnitt 2020 førstregang: {props.snittFør}</li>
+                <li>Karaktersnitt 2020 førstegang: {props.snittFør}</li>
                 <li>Mest relevante VGS fag: {props.VGSfag}</li>
             </ul>
             }
