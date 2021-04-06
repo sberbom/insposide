@@ -11,7 +11,6 @@ class Header extends React.Component {
     goToS = () => {
         this.props.history.push(`/spørsmål_og_svar`) 
     }
-
     render() {
         return(
             <div>
@@ -27,9 +26,9 @@ class Header extends React.Component {
                         Det vil foregå på en digital plattform der dere kan hoppe inn i rom med representantene 
                         for de ulike studiene og stille spørsmål.
                     </p>
-                    {/* <a href="#" target="_blank"  rel="noopener noreferrer" className="btn btn-primary påmelding-btn">Meld deg på her!</a> */}
+                    <a href="https://forms.gle/jXktb1VpWVXi23Vp9" target="_blank"  rel="noopener noreferrer" className="btn btn-primary påmelding-btn">Meld deg på her!</a>
                     <div className="heade-info-container">
-                        <iframe className="header-video" allowFullScreen="allowfullscreen" src={"https://www.youtube.com/embed/aUFxiIip8XY"} title="headervideo"></iframe>
+                        <iframe className="header-video" allowFullScreen="allowfullscreen" src={"https://www.youtube.com/embed/450QACWI_4E"} title="headervideo"></iframe>
                         <div className="list-container card desktop">
                             <h5 onClick={this.goTo} className="list-title">Nyttige linker</h5>
                             <ul className="tip-list">
