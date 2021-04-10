@@ -25,7 +25,12 @@ class Home extends React.Component{
                     <SBCard
                         title={"Bygg- og miljøteknikk"}
                         description={"Vil du være med å forme verden? Vil du sørge for rent drikkevann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater?"}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/kristin_cut.jpg?alt=media&token=a840348a-d5b5-4d47-aa12-96f14dc34add"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/kristin.png?alt=media&token=e6a1d81a-ddd9-44c3-8732-ff18aa68e2b4"}
+                        />
+                    <SBCard
+                        title={"Bioteknologi"}
+                        description={"Hvordan kan vi få mikroorganismer til å produsere ting vi har nytte av? På hvilke måter kan bakterier redusere forurensning? Hvilke faktorer påvirker sunnhet og kvalitet på maten vi spiser? Hvordan kan biopolymerer brukes til å lage nye og nyttige produkt? Alt dette og mer kan du fordype deg i ved å ta en master i bioteknologi."}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/Marieke.png?alt=media&token=0b87361f-1700-4f27-b0a2-395bc12072e4"}
                         />
                     <SBCard
                         title={"Kommunikasjonsteknologi"}
@@ -61,7 +66,7 @@ class Home extends React.Component{
                     <SBCard
                         title={"Kybernetikk og Robotikk"}
                         description={"Kybernetikk og Robotikk er et studie som gir deg innsikt i fremtidens teknologier; robotisering, digitalisering og automatisering er typiske ting vi driver med. Hvis du interesserer deg for matematikk eller datateknologi, eller er nysgjerrig på roboter, droner eller autonome systemer, passer dette studiet perfekt for deg!"}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/sina_cut.jpg?alt=media&token=79f2d537-54f2-45ee-8658-0595f2d66318"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/rune.png?alt=media&token=910d0afc-934e-4f6c-a5f2-bdcb9796d037"}
                         />
                     <SBCard
                         title={"Industriell økonomi og teknologiledelse"}
@@ -71,7 +76,7 @@ class Home extends React.Component{
                     <SBCard
                         title={"Industriell kjemi og bioteknologi"}
                         description={"Industriell kjemi og bioteknologi hjelper deg med å forstå verden både på et mikroskopisk nivå og i storskala på industrielt nivå. Vil du være en del av utviklingen innenfor alt fra genforskning til hydrogendrevne biler, da bør du søke industriell kjemi!"}
-                        image = {"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6W_B3AiQ97WiKjJtgbJb4Srr1CuQslpZOpDNRZ1LLK3UnpQjF&usqp=CAU"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/helene.png?alt=media&token=5bfc65b1-e079-44df-bc95-1b572df91e0d"}
                         />
                     <SBCard
                         title={"Energi og miljø"}
@@ -81,12 +86,12 @@ class Home extends React.Component{
                     <SBCard
                         title={"Datateknologi"}
                         description={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/katrine_cut.jpg?alt=media&token=5f0edd02-dc94-473a-9bc0-ed60983dcd88"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/Julie.png?alt=media&token=bf3d3fe7-4c7b-4ba8-b13f-aa4a2e826833"}
                         />
                     <SBCard
                         title={"Fysikk og Matematikk"}
                         description={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan brukes i alle fagfelt! "}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/selma_cut.jpg?alt=media&token=4b78af04-fc33-4432-819c-8db468d5717c"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/johannes.png?alt=media&token=65bf9a07-55fa-466b-88c9-e960926b4bc5"}
                         />
                     <SBCard
                         title={"Marin teknikk"}
@@ -97,6 +102,11 @@ class Home extends React.Component{
                         title={"Maskiningeniør"}
                         description={"Som Maskiningeniør lærer du hvordan mekanismer fungerer på innsiden og du lærer hvordan det blir produsert. Alt fra dørhåndtak, vaskemaskin, Coca-Cola bok og jetmotorer og mer. Vil du være med å utvikle produkter og/eller maskiner, kanskje nettopp din oppfinnsomhet og kreativitet gjør deg til den nye Elon Musk?"}
                         image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/asbj%C3%B8rn_cut.jpg?alt=media&token=d2d9b5a0-45c3-4cd2-b10d-645a5080cbf0"}
+                        />
+                    <SBCard
+                        title={"Nanoteknologi"}
+                        description={"Hvordan kan atomer og molekyler settes sammen til nye typer materialer? Hvordan kan vi bygge nye komponenter for diagnostikk og medisinering, ren energiteknologi og nye elektroniske innretninger? Nanoteknologi handler om å studere og manipulere ulike materialer helt nede på atomnivå. Nanoteknologiutdanningen er tverrfaglig. Den kombinerer fagområdene fysikk, kjemi og biologi. Nanoteknologi gir muligheter til å designe materialer, systemer og komponenter med unike egenskaper som igjen åpner opp for framstilling av produkter med helt nye kvaliteter."}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/H%C3%A5kon.png?alt=media&token=798e80c6-3a05-455d-bbb9-3a3e4eea1ec7"}
                         />
                 </div>
             </div>

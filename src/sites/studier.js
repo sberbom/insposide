@@ -24,6 +24,8 @@ class Studier extends React.Component {
         this.fysmat = React.createRef()
         this.marin = React.createRef()
         this.maskin=React.createRef()
+        this.nano = React.createRef()
+        this.biotek = React.createRef()
     }
 
     componentDidMount(){
@@ -84,6 +86,12 @@ class Studier extends React.Component {
             case "Maskiningeniør":
                 window.scrollTo(0, this.maskin.current.offsetTop - 70);
                 break;
+            case "Nanoteknologi":
+                window.scrollTo(0, this.nano.current.offsetTop - 70);
+                break;
+            case "Bioteknologi":
+                window.scrollTo(0, this.biotek.current.offsetTop - 70);
+                break;
             default:
                 window.scrollTo(0,0);
         }   
@@ -97,6 +105,7 @@ class Studier extends React.Component {
                     <div className="overview-container">
                         <div>
                             <p onClick={() => this.scroll("Bygg- og miljøteknikk")}>Bygg- og miljøteknikk</p>
+                            <p onClick={() => this.scroll("Bioteknologi")}>Bioteknologi</p>
                             <p onClick={() => this.scroll("Datateknologi")}>Datateknologi</p>
                             <p onClick={() => this.scroll("NTNUs Entreprenørskole")}>NTNUs Entreprenørskole</p>
                             <p onClick={() => this.scroll("Elektronisk systemdesign og innovasjon")}>Elektronisk systemdesign og innovasjon</p>
@@ -113,13 +122,14 @@ class Studier extends React.Component {
                             <p onClick={() => this.scroll("Lektorutdanning i Realfag")}>Lektorutdanning i Realfag</p>
                             <p onClick={() => this.scroll("Marin teknikk")}>Marin teknikk</p>
                             <p onClick={() => this.scroll("Maskiningeniør")}>Maskiningeniør</p>
-                            <p onClick={() => this.scroll("Produksjon og produktutvikling")}>Produksjon og produktutvikling</p>
+                            <p onClick={() => this.scroll("Nanoteknologi")}>Nanoteknologi</p>
+                            <p onClick={() => this.scroll("Produksjon og produktutvikling")}>Produksjon og produktutvikling</p>Nanoteknologi
                         </div>
                     </div>
                     <Studie 
                         ref={this.bygg}
                         name={"Bygg- og miljøteknikk"}
-                        video={"https://www.youtube.com/embed/rmo-SfSVffE"}
+                        video={"https://www.youtube.com/embed/j363L38rthQ"}
                         p1={"Vil du være med å forme verden? Vil du sørge for rent drikkevann? Energi effektivisere bygninger? Bidra til å bygge miljøvennlig? Løse storbyers trafikkproblemer? Vil du studere noe håndfast som gir tydelige resultater? "}
                         p2={"Er du venn med Newtons lover? Hvis ikke så kommer du vertfall til å bli det. Men bygg er ikke bare det, det er økonomi, ledelse, team arbeid, matematikk, energieffektivisering, bærekraft og mye mye mer."}
                         p3={"Som byggingeniør skal man ofte konstruere og dimensjonere konstruksjoner. Enkelt sagt betyr det å finne gode og lønnsomme løsninger. Ved valg av retning vil du kunne spesialisere deg innen det du syntes er mest spennende. Du kan være en leder på byggeplassen eller spesialisere deg innen alt fra brann og akustikk til geoteknikk. Det er også mulig å spesialisere seg innen maritime konstruksjoner dersom havets enorme krefter er noe du tør å deale med. "}
@@ -132,9 +142,21 @@ class Studier extends React.Component {
                         VGSfag={"Fysikk"}
                     />
                     <Studie 
+                        ref={this.biotek}
+                        name={"Bioteknologi"}
+                        video={"https://www.youtube.com/embed/EOpOKQdkRvc"}
+                        p1={"Hvordan kan vi få mikroorganismer til å produsere ting vi har nytte av? På hvilke måter kan bakterier redusere forurensning? Hvilke faktorer påvirker sunnhet og kvalitet på maten vi spiser? Hvordan kan biopolymerer brukes til å lage nye og nyttige produkt? Alt dette og mer kan du fordype deg i ved å ta en master i bioteknologi."}
+                        p2={"Den 5-årige bioteknologiutdanningen har som mål å gi deg et bredt og solid grunnlag i celle- og molekylærbiologi, biokjemi og mikrobiologi. Vi legger stor vekt på laboratoriebasert undervisning, og du får en variert og interessant studiehverdag."}
+                        NTNU={"https://www.ntnu.no/studier/mbiot5/mbiot5"}
+                        fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
+                        snittOrd={"60.7"}
+                        snittFør={"57,6"}
+                        VGSfag={"Kjemi"}
+                    />
+                    <Studie 
                         ref={this.data}
                         name={"Datateknologi"}
-                        video={"https://www.youtube.com/embed/FeH-O9tm0o0"}
+                        video={"https://www.youtube.com/embed/UIktzSXirDo"}
                         p1={"Datateknologi står sentralt i all framtidsrettet teknologi, og du kan lære alt fra temaer som kunstig intelligens til spillteknologi og programvareutvikling. Med en master i Datateknologi blir du svært ettertraktet i jobbmarkedet, og du vil kunne få kompetanse til å løse viktige samfunnsutfordringer."}
                         p2={"Dersom du er glad i realfag og nysgjerrig på koding, har du kommet til rett studie! På Datateknologi lærer du teknikker for å utvikle datasystemer, og du får brukt det teoretiske fagstoffet til å løse utfordringer i prosjektoppgaver sammen med andre studenter. Det å løse problemer og jobbe i team, blir du altså god på! Dette gjør at mange blir ledere i prosjekter når de kommer ut i jobb, andre blir eksperter på ett enkelt teknologiområde. Man trenger ingen forkunnskaper i programmering før man starter på studiet. De første årene byr på en bred kompetanse innenfor datafag og andre generelle ingeniørfag. I det tredje året kan du spesialisere deg og velge mellom fire studieretninger: Kunstig intelligens, databaser og søk, programvaresystemer og Algoritmer og datamaskiner. Studiet passer for deg som ønsker å skape fremtidens teknologi, i dag jobbes det for eksempel med å bruke datateknologi til å forstå sammenhenger i genmateriale, som kan bidra til å utvikle medisiner og kurere sykdommer. "}
                         NTNU={"https://www.ntnu.no/studier/mtdt"}
@@ -180,7 +202,7 @@ class Studier extends React.Component {
                     <Studie 
                         ref={this.fysmat}
                         name={"Fysikk og Matematikk"}
-                        video={"https://www.youtube.com/embed/TPBVwZfkjh8"}
+                        video={"https://www.youtube.com/embed/k-BGvGA2gTg"}
                         p1={"Fysikk og Matematikk gir deg en fysisk forståelse av ALT rundt oss - både det vi kan se, men også det vi ikke kan se med det blotte øyet. Hvis du studerer Fysikk og Matematikk vil du kunne være med på å utvikle teknologi som kan brukes i alle fagfelt! "}
                         p2={"Dersom du er nysgjerrig og glad i matte og fysikk er dette studiet for deg! Fysikk og Matematikk (fysmat) gir deg grundig teoretisk kompetanse innen matematiske modeller og fysiske prinsipper. Du får se fysikken i praksis gjennom forsøk i tillegg til å lære deg å programmere og bruke dette i beregninger. Disse fagområdene danner en basis for all teknologisk utvikling. Det sies at etter man har studert fysmat blir man sivilingeniørenes potet – du kan brukes til alt! Dette er fordi man rett og slett blir en god problemløser, og dette trenger du innen ALLE fagfelt! Etter to år på fysmat, vil du kunne velge å spesialisere deg innen en av tre spennende fagområder. Du har valget mellom Teknisk Fysikk hvor du graver dypere ned i fysikkens verden, Industriell Matematikk som gir en bred og anvendbar kompetanse innen matte og Biofysikk og Medisinsk teknologi – hvor du kan være med på å utvikle kunstige organer og blir en smeltedigel mellom fysikk og biologi. "}
                         NTNU={"https://www.ntnu.no/studier/mtfyma"}
@@ -231,7 +253,7 @@ class Studier extends React.Component {
                         video={"https://www.youtube.com/embed/-egvgEP1nO0"}
                         p1={"Industriell kjemi og bioteknologi hjelper deg med å forstå verden både på et mikroskopisk nivå og i storskala på industrielt nivå. Vil du være en del av utviklingen innenfor alt fra genforskning til hydrogendrevne biler, da bør du søke industriell kjemi!"}
                         p2={"Industriell kjemi og bioteknologi handler ikke bare om reaksjoner mellom grunnstoff og det mange forbinder med klassisk kjemi fra videregående. Om du er interessert i teknologi og naturfag, er dette kanskje en linje for deg!  De to første årene gir deg en god innføring i alle realfag, noe som er viktig for å kunne forstå hvorfor kjemien er slik den er. Etter andre året velger man spesialisering innenfor bioteknologi, kjemi, kjemisk prosessteknologi eller materialteknologi og energiteknologi.  Som sivilingeniør innenfor et raskt voksende fagfelt blir du svært attraktiv blant arbeidsgivere. Den sammensetningen av kunnskap vi får på industriell kjemi og bioteknologi er det få andre studier som tilbyr, og jobbmulighetene er derfor mange. Alle trenger en kjemiker!"}
-                        NTNU={"https://www.ntnu.no/studier/mtkj"}
+                        NTNU={"https://www.youtube.com/embed/JORCcXuBnpw"}
                         fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
                         snittOrd={"54,5"}
                         snittFør={"55,7"}
@@ -240,7 +262,7 @@ class Studier extends React.Component {
                     <Studie 
                         ref={this.kyb}
                         name={"Kybernetikk og Robotikk"}
-                        video={"https://www.youtube.com/embed/WUOtARgYK28"}
+                        video={"https://www.youtube.com/embed/quwEBGyi4Dw"}
                         p1={"Kybernetikk og Robotikk er et studie som gir deg innsikt i fremtidens teknologier; robotisering, digitalisering og automatisering er typiske ting vi driver med. Hvis du interesserer deg for matematikk eller datateknologi, eller er nysgjerrig på roboter, droner eller autonome systemer, passer dette studiet perfekt for deg!"}                     
                         p2={"Kybernetikk og Robotikk handler først og fremst om hvordan vi kan overvåke og styre kompliserte systemer. Dette høres kanskje litt fjernt ut, men det er denne teknologien som brukes i blant annet selvkjørende biler, roboter, ultralydavbildning og mye annen spennende teknologi! På studiet har vi mye laboratoriearbeid, det gir oss muligheten til å prøve ut det vi lærer i praksis og se resultater av arbeidet vårt. Kybernetikk og Robotikk er studiet for deg som synes at mange områder innenfor realfag er spennende. I løpet av studiets 5 år får man særlig god kompetanse innenfor både matematikk og datateknologi, og det er dette som danner grunnmuren for å drive med blant annet automatisering og digitalisering. Dette brede kunnskapsområdet gjør at man kan bruke utdanningen innenfor utrolig mange ulike områder.  Kanskje vil du lage selvstyrende roboter, eller ubemannete fremkomstmidler? Eller vil du jobbe innenfor helse og utvikle proteser, eller finne nye måter å detektere sykdommer? Da synes jeg du skal søke!"}
                         NTNU={"https://www.ntnu.no/studier/mttk"}
@@ -252,7 +274,7 @@ class Studier extends React.Component {
                     <Studie
                         ref={this.kommunikasjonsteknologi} 
                         name={"Kommunikasjonsteknologi"}
-                        video={"https://www.youtube.com/embed/pC0t0WhXVBw"}
+                        video={"https://www.youtube.com/embed/LTKCQsKcwLw"}
                         p1={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
                         p2={"Du må ha mye kunnskap om informasjonsteknologi for å lage gode og sikre systemer. Kommunikasjonen mellom enheter skal være trygg, og det skal være minimal sjanse for at systemet slutter å fungere. Du vil de første årene lære å lage apper gjennom programmering, hvordan internett er bygd opp, hvordan du sender datapakker gjennom nettverk, hvordan du hacker andre så du vet hvordan du beskytter deg selv og mye, mye mer. Dette gjør at du kan arbeide innenfor alt som har med teknologi å gjøre. De siste to årene av studiet vil du spesialisere deg innenfor enten Informasjonssikkerhet, som vil gi deg en dypere innføring i hvordan man beskytter informasjon og mer om hacking, Digital økonomi, hvor du vil lære hvordan teknologi og digitale tjenester påvirker samfunnet og forretningsmodeller, eller Nett, tjenester og applikasjoner der du vil lære om arkitekturen som ligger bak alt av nettbaserte tjenester og bygge de slik at de er raske og stabile."}
                         NTNU={"https://www.ntnu.no/studier/mtkom"}
@@ -296,6 +318,17 @@ class Studier extends React.Component {
                         snittOrd={"52,3"}
                         snittFør={"49,5"}
                         VGSfag={"Fysikk"}
+                    />
+                    <Studie 
+                        ref={this.nano}
+                        name={"Nanoteknologi"}
+                        video={"https://www.youtube.com/embed/gSSXEoTDD7M"}
+                        p1={"Hvordan kan atomer og molekyler settes sammen til nye typer materialer? Hvordan kan vi bygge nye komponenter for diagnostikk og medisinering, ren energiteknologi og nye elektroniske innretninger? Nanoteknologi handler om å studere og manipulere ulike materialer helt nede på atomnivå. Nanoteknologiutdanningen er tverrfaglig. Den kombinerer fagområdene fysikk, kjemi og biologi. Nanoteknologi gir muligheter til å designe materialer, systemer og komponenter med unike egenskaper som igjen åpner opp for framstilling av produkter med helt nye kvaliteter."}
+                        NTNU={"https://www.ntnu.no/studier/mtnano"}
+                        fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
+                        snittOrd={"62,2"}
+                        snittFør={"61,1"}
+                        VGSfag={"Fysikk, kjemi"}
                     />
                     <Studie 
                         ref={this.pup}
