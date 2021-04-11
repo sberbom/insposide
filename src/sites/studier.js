@@ -148,10 +148,10 @@ class Studier extends React.Component {
                         p1={"Hvordan kan vi få mikroorganismer til å produsere ting vi har nytte av? På hvilke måter kan bakterier redusere forurensning? Hvilke faktorer påvirker sunnhet og kvalitet på maten vi spiser? Hvordan kan biopolymerer brukes til å lage nye og nyttige produkt? Alt dette og mer kan du fordype deg i ved å ta en master i bioteknologi."}
                         p2={"Den 5-årige bioteknologiutdanningen har som mål å gi deg et bredt og solid grunnlag i celle- og molekylærbiologi, biokjemi og mikrobiologi. Vi legger stor vekt på laboratoriebasert undervisning, og du får en variert og interessant studiehverdag."}
                         NTNU={"https://www.ntnu.no/studier/mbiot5/mbiot5"}
-                        fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
+                        fagkrav={"R1(S1 og S2)"}
                         snittOrd={"60.7"}
                         snittFør={"57,6"}
-                        VGSfag={"Kjemi"}
+                        VGSfag={"Biologi"}
                     />
                     <Studie 
                         ref={this.data}
