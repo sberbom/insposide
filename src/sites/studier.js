@@ -214,7 +214,7 @@ class Studier extends React.Component {
                     <Studie 
                         ref={this.emil}
                         name={"Energi og miljø"}
-                        video={"https://www.youtube.com/embed/VniTSyTWB7I"}
+                        video={"https://www.youtube.com/embed/HAHqR0Zdmig"}
                         p1={"På Energi og miljø lærer man om og hvordan man kan bruke teknologi for å produsere fornybar energi og hvordan samfunnet som helhet kan bli mer miljøvennlig. Studiet gir deg den faglige tyngden slik at du kan være med å tenke ut fremtidens løsninger. Dette gjør studiet svært spennende og givende!"}
                         p2={"Kloden står ovenfor store klimaendringer, og det er et voksende behov for folk med realfaglig utdannelse innenfor bærekraft. På det femårige masterstudiet Energi og miljø (emil) får du innblikk i teknologien bak å spare energi, utvikle smarte løsninger og produsere fornybar energi. Studiet gir bred kunnskap innenfor relevante fag innenfor bærekraft. Når du er ferdigutdannet kan du velge mellom spennende fagfelt. Du kan jobbe innenfor blant annet forskning, industri eller bli rådgiver for andre bransjer som ønsker å bli mer miljøvennlige. Det er kun fantasien som setter grenser! Etter to år på studiet begynner man å spesialisere seg, og da kan man velge mellom tre hovedretninger. Den ene fokuserer på teknologi for produksjon og transport av elektrisk energi, Elektrisk energiteknikk og smarte nett. Du kan også velge en retning som heter Energiplanlegging og miljøanalyse, der du får dypere kunnskap om hvordan bygninger og samfunn som helhet kan spare energi og ressurser. På den siste hovedretningen, Energi og prosessteknikk, lærer du om energiprosesser innenfor vannkraft, vindkraft og lignende."}
                         NTNU={"https://www.ntnu.no/studier/mtenerg"}
@@ -286,7 +286,7 @@ class Studier extends React.Component {
                     <Studie 
                         ref={this.lektor}
                         name={"Lektorutdanning i Realfag"}
-                        video={"https://www.youtube.com/embed/I33gaZO-IWI"}
+                        video={"https://www.youtube.com/embed/hbjGIQYYjiU"}
                         p1={"Har du lyst til å utvikle din faglige interesse for realfag og samtidig synes formidling er spennende? Da kan lektorutdanningen i realfag være noe for deg. Du får bred realfaglig og teknologisk innsikt samtidig som du opparbeider deg gode pedagogisk evner. Dette gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig sektor. "}                     
                         p2={"Er du glad i mennesker, har en iver for realfag og har lyst til at flere skal se gleden, nytten og fasinasjonen med realfag? Da kan lektorutdanningen i realfag være noe for akkurat deg! Lektorutdanningen i realfag gir deg en unik kompetanse i realfagene du brenner mest for, samtidig som du gjennom praksis i studiet får en solid pedagogisk bakgrunn. Du kan være med på å skape teknologiske løsninger for en bærekraftig fremtid, eller finne ut hvordan programmering og digital undervisning best kan implementeres i skolen. Begge deler er mulig på lektorstudiet! Du velger først to av fagene kjemi, fysikk, biologi, informatikk og matte, og fordyper deg videre i ett av fagene. På den måten har du faktisk muligheten til å få to utdanninger på 5 år, både lektorgraden OG en master i et valgt realfag på lik linje med alle som studerer det realfaget. Det er kult og unikt, og gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig næringsliv."}
                         NTNU={"https://www.ntnu.no/studier/mlreal"}
@@ -298,7 +298,7 @@ class Studier extends React.Component {
                     <StudieMarin 
                         ref={this.marin}
                         name={"Marin teknikk"}
-                        video={"https://www.youtube.com/embed/aNyX2zF-i2w"}
+                        video={"https://www.youtube.com/embed/v2XmOD2j5Tc"}
                         NTNU={"https://www.ntnu.no/studier/mtmart"}
                     />
                     <Studie 

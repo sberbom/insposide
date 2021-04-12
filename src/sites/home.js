@@ -20,7 +20,7 @@ class Home extends React.Component{
                     <SBCard
                         title={"Lektorutdanning i Realfag"}
                         description={"Har du lyst til å utvikle din faglige interesse for realfag og samtidig synes formidling er spennende? Da kan lektorutdanningen i realfag være noe for deg. Du får bred realfaglig og teknologisk innsikt samtidig som du opparbeider deg gode pedagogisk evner. Dette gjør deg attraktiv som arbeidstaker både i skolen (8.-13. trinn) og i privat/offentlig sektor. "}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/martine_cut.jpg?alt=media&token=b1292946-f5d0-4c4b-a76c-8125ff0d8f8c"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/Eirin.png?alt=media&token=01937813-67b6-421b-a04b-3c312121e67d"}
                         />
                     <SBCard
                         title={"Bygg- og miljøteknikk"}
@@ -36,7 +36,7 @@ class Home extends React.Component{
                         title={"Kommunikasjonsteknologi"}
                         splitTitle={"Kommunikasjons-teknologi"}
                         description={"Mange spådde at internett bare kom til å være et blaff, men i dag er vi alltid koblet på nett, enten det er via ruteren hjemme eller på telefonen gjennom teletjenester. Derfor blir vi konstant utsatt for digitale angrep, men heldigvis for deg så har andre lagd løsninger som beskytter systemene og dine enheter mot digitale trusler. Kanskje du vil bli en av disse personene?"}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/h%C3%A5vard_cut.jpg?alt=media&token=8953bd52-ed5e-49f2-9d53-99903627eae4"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/Sigmund.png?alt=media&token=449fb662-ef30-4cbc-b465-9fce64785bd7"}
                         />
                     <SBCard
                         title={"NTNUs Entreprenørskole"}
@@ -81,7 +81,7 @@ class Home extends React.Component{
                     <SBCard
                         title={"Energi og miljø"}
                         description={"På Energi og miljø lærer man om og hvordan man kan bruke teknologi for å produsere fornybar energi og hvordan samfunnet som helhet kan bli mer miljøvennlig. Studiet gir deg den faglige tyngden slik at du kan være med å tenke ut fremtidens løsninger. Dette gjør studiet svært spennende og givende!"}
-                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/agnes_cut.jpeg?alt=media&token=d023f109-c7a5-4d6e-803e-8a71e1149f28"}
+                        image = {"https://firebasestorage.googleapis.com/v0/b/insposide.appspot.com/o/Tuva.png?alt=media&token=5099d7c9-137d-48f9-bfcf-983220a027ac"}
                         />
                     <SBCard
                         title={"Datateknologi"}
