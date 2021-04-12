@@ -250,10 +250,10 @@ class Studier extends React.Component {
                     <Studie 
                         ref={this.kjemi}
                         name={"Industriell kjemi og bioteknologi"}
-                        video={"https://www.youtube.com/embed/-egvgEP1nO0"}
+                        video={"https://www.youtube.com/embed/JORCcXuBnpw"}
                         p1={"Industriell kjemi og bioteknologi hjelper deg med å forstå verden både på et mikroskopisk nivå og i storskala på industrielt nivå. Vil du være en del av utviklingen innenfor alt fra genforskning til hydrogendrevne biler, da bør du søke industriell kjemi!"}
                         p2={"Industriell kjemi og bioteknologi handler ikke bare om reaksjoner mellom grunnstoff og det mange forbinder med klassisk kjemi fra videregående. Om du er interessert i teknologi og naturfag, er dette kanskje en linje for deg!  De to første årene gir deg en god innføring i alle realfag, noe som er viktig for å kunne forstå hvorfor kjemien er slik den er. Etter andre året velger man spesialisering innenfor bioteknologi, kjemi, kjemisk prosessteknologi eller materialteknologi og energiteknologi.  Som sivilingeniør innenfor et raskt voksende fagfelt blir du svært attraktiv blant arbeidsgivere. Den sammensetningen av kunnskap vi får på industriell kjemi og bioteknologi er det få andre studier som tilbyr, og jobbmulighetene er derfor mange. Alle trenger en kjemiker!"}
-                        NTNU={"https://www.youtube.com/embed/JORCcXuBnpw"}
+                        NTNU={"https://www.ntnu.no/studier/mtkj"}
                         fagkrav={"R1, R2 (Karakter 4 i R2), Fysikk 1"}
                         snittOrd={"54,5"}
                         snittFør={"55,7"}
